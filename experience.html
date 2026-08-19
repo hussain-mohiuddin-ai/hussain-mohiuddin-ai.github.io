@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience — Hussain Mohiuddin Ahmed</title>
+  <meta name="description" content="Work experience and education of Hussain Mohiuddin Ahmed." />
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (saved === "dark" || (!saved && prefersDark)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) { }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-bracket">&lt;</span>Hussain<span class="nav-logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="experience.html" class="nav-link active">Experience</a></li>
+        <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Toggle dark mode">
+          <span class="theme-toggle-knob">🌙</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <div class="container page-header">
+      <p class="page-header-eyebrow">03 — Experience</p>
+      <h1 class="page-header-title gradient-text">Where the work happened</h1>
+    </div>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-rail"><span class="timeline-dot timeline-dot-edu"></span></div>
+            <div class="timeline-content">
+              <p class="timeline-date">Aug 2026 — Present</p>
+              <h3 class="timeline-title">Backend AI Intern</h3>
+              <p class="timeline-org">FlyRank AI</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-rail"><span class="timeline-dot timeline-dot-edu"></span></div>
+            <div class="timeline-content">
+              <p class="timeline-date">Jul 2026 — Present</p>
+              <h3 class="timeline-title">Digital Marketing Specialist</h3>
+              <p class="timeline-org">A-Forward</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-rail"><span class="timeline-dot"></span></div>
+            <div class="timeline-content">
+              <p class="timeline-date">Jul 2026 — Aug 2026</p>
+              <h3 class="timeline-title">Artificial Intelligence Intern</h3>
+              <p class="timeline-org">CodeAlpha</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-rail"><span class="timeline-dot timeline-dot-edu"></span></div>
+            <div class="timeline-content">
+              <p class="timeline-date">Oct 2025 — Oct 2029</p>
+              <h3 class="timeline-title">B.E Tech, Artificial Intelligence</h3>
+              <p class="timeline-org">Sir Syed University of Engineering &amp; Technology</p>
+              <p class="timeline-highlight">3.17 / 4.0 Overall GPA</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Hussain Mohiuddin Ahmed. All rights reserved.</p>
+      <a href="#main" class="footer-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects — Hussain Mohiuddin Ahmed</title>
+<meta name="description" content="AI and machine learning projects by Hussain Mohiuddin Ahmed." />
+
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (saved === "dark" || (!saved && prefersDark)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (e) {}
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav-wrap">
+  <nav class="nav container">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-bracket">&lt;</span>Hussain<span class="nav-logo-bracket">/&gt;</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="projects.html" class="nav-link active">Projects</a></li>
+      <li><a href="experience.html" class="nav-link">Experience</a></li>
+      <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Toggle dark mode">
+        <span class="theme-toggle-knob">🌙</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <div class="container page-header">
+    <p class="page-header-eyebrow">02 — Projects</p>
+    <h1 class="page-header-title gradient-text">Selected work</h1>
+    <p class="page-header-lede">A handful of AI systems built end-to-end, from data to interface.</p>
+  </div>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="project-grid">
+
+        <article class="card project-card">
+          <div class="project-card-top">
+            <span class="project-index">01</span>
+            <h3 class="project-title">Echo</h3>
+          </div>
+          <p class="project-sub">AI Audio Transcription &amp; Emotion Detection</p>
+          <p class="project-desc">
+            Transcribes spoken audio and layers emotion detection on top, turning a raw voice
+            recording into structured, readable insight.
+          </p>
+          <ul class="project-tags"><li>Python</li><li>OpenAI Whisper</li></ul>
+          <div class="project-actions">
+            <a href="#" class="btn btn-ghost btn-sm">GitHub Repo</a>
+            <a href="#" class="btn btn-primary btn-sm">Live Demo - Coming Soon!</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-card-top">
+            <span class="project-index">02</span>
+            <h3 class="project-title">Language Translation Tool</h3>
+          </div>
+          <p class="project-sub">15+ languages, auto-detect &amp; text-to-speech</p>
+          <p class="project-desc">
+            A console translator that auto-detects the source language, translates across 15
+            languages, and can read the result back out loud.
+          </p>
+          <ul class="project-tags"><li>deep-translator</li><li>gTTS</li><li>langdetect</li></ul>
+          <div class="project-actions">
+            <a href="https://github.com/husssain-2811/CodeAlpha_AI_Tasks/tree/main/Task1_LanguageTranslation" class="btn btn-ghost btn-sm">GitHub Repo</a>
+            <a href="#" class="btn btn-primary btn-sm">Live Demo - Coming Soon!</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-card-top">
+            <span class="project-index">03</span>
+            <h3 class="project-title">NLP FAQ Chatbot</h3>
+          </div>
+          <p class="project-sub">Intent matching with TF-IDF &amp; cosine similarity</p>
+          <p class="project-desc">
+            Matches free-form questions to the closest FAQ using TF-IDF vectorization and
+            cosine similarity, with NLTK preprocessing under the hood.
+          </p>
+          <ul class="project-tags"><li>NLTK</li><li>scikit-learn</li></ul>
+          <div class="project-actions">
+            <a href="https://github.com/husssain-2811/CodeAlpha_AI_Tasks/tree/main/Task2_FAQChatbot" class="btn btn-ghost btn-sm">GitHub Repo</a>
+            <a href="#" class="btn btn-primary btn-sm">Live Demo - Coming Soon!</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-card-top">
+            <span class="project-index">04</span>
+            <h3 class="project-title">Real-time Object Detection</h3>
+          </div>
+          <p class="project-sub">YOLOv8 with a custom centroid tracker</p>
+          <p class="project-desc">
+            Detects and tracks objects live across video frames, assigning persistent IDs with
+            a centroid-based tracker layered on top of YOLOv8.
+          </p>
+          <ul class="project-tags"><li>OpenCV</li><li>Ultralytics</li></ul>
+          <div class="project-actions">
+            <a href="https://github.com/husssain-2811/CodeAlpha_AI_Tasks/tree/main/Task4_ObjectDetection" class="btn btn-ghost btn-sm">GitHub Repo</a>
+            <a href="#" class="btn btn-primary btn-sm">Live Demo - Coming Soon!</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-card-top">
+            <span class="project-index">05</span>
+            <h3 class="project-title">LSTM Music Generator</h3>
+          </div>
+          <p class="project-sub">Original sequences from MIDI training data</p>
+          <p class="project-desc">
+            Trains an LSTM network on note sequences and generates new, playable MIDI
+            compositions using temperature-based sampling.
+          </p>
+          <ul class="project-tags"><li>TensorFlow</li><li>Keras</li><li>music21</li></ul>
+          <div class="project-actions">
+            <a href="https://github.com/husssain-2811/CodeAlpha_AI_Tasks/tree/main/Task3_MusicGeneration" class="btn btn-ghost btn-sm">GitHub Repo</a>
+            <a href="#" class="btn btn-primary btn-sm">Live Demo - Coming Soon!</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Hussain Mohiuddin Ahmed. All rights reserved.</p>
+    <a href="#main" class="footer-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
