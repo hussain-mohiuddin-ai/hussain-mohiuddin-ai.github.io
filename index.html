@@ -1,176 +1,185 @@
----
-layout: default
-nav_id: home
-title: "Hussain Mohiuddin Ahmed — AI Engineer & Developer"
-description: "Portfolio of Hussain Mohiuddin Ahmed — Backend AI Intern and B.E Tech (Artificial Intelligence) student building ML, NLP and Computer Vision systems."
----
+<!-- index.html (Home) -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hussain Mohiuddin Ahmed | AI Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Hussain Mohiuddin Ahmed - Backend AI Intern and AI Engineering Student." />
+  <!-- Tab Icon / Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon-modified.png" />
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-<!-- ============ HERO ============ -->
-<section class="hero container" aria-label="Introduction">
-  <div class="hero-glow" aria-hidden="true"></div>
-
-  <div class="hero-text">
-    <p class="eyebrow"><span class="dot-pulse"></span> Available for backend & AI engineering roles</p>
-
-    <h1 class="hero-name">
-      Hussain Mohiuddin<br /><span class="gradient-text">Ahmed</span>
-    </h1>
-
-    <p class="hero-role">
-      Backend AI Intern <span class="hero-role-sep">&amp;</span> B.E&nbsp;Tech (Artificial Intelligence) Student
-    </p>
-
-    <p class="hero-tagline">
-      Passionate about building intelligent systems and solving real-world problems using
-      Machine Learning, Deep Learning, and NLP.
-      <span class="cursor" aria-hidden="true"></span>
-    </p>
-
-    <div class="hero-cta">
-      <a href="/projects.html" class="btn btn-primary">View My Work</a>
-      <a href="/assets/Hussain_Mohiuddin_Resume.pdf" class="btn btn-outline" download>Download Resume</a>
-    </div>
-
-    <div class="hero-stack" aria-label="Core toolkit">
-      <span class="chip">python</span>
-      <span class="chip">tensorflow</span>
-      <span class="chip">nlp</span>
-      <span class="chip">computer-vision</span>
-    </div>
-  </div>
-
-  <div class="hero-visual" aria-hidden="true">
-    <svg class="hero-network" viewBox="0 0 400 400" fill="none">
-      <g class="network-lines">
-        <line x1="70" y1="90" x2="200" y2="200"></line>
-        <line x1="330" y1="70" x2="200" y2="200"></line>
-        <line x1="60" y1="300" x2="200" y2="200"></line>
-        <line x1="330" y1="320" x2="200" y2="200"></line>
-        <line x1="200" y1="40" x2="200" y2="200"></line>
-        <line x1="200" y1="360" x2="200" y2="200"></line>
-        <line x1="70" y1="90" x2="200" y2="40"></line>
-        <line x1="330" y1="70" x2="200" y2="40"></line>
-        <line x1="60" y1="300" x2="200" y2="360"></line>
-        <line x1="330" y1="320" x2="200" y2="360"></line>
-      </g>
-      <g class="network-nodes">
-        <circle cx="70" cy="90" r="4"></circle>
-        <circle cx="330" cy="70" r="4"></circle>
-        <circle cx="60" cy="300" r="4"></circle>
-        <circle cx="330" cy="320" r="4"></circle>
-        <circle cx="200" cy="40" r="4"></circle>
-        <circle cx="200" cy="360" r="4"></circle>
-      </g>
-    </svg>
-
-    <div class="hero-photo-frame">
-      <img src="/assets/profile.jpg" alt="Portrait of Hussain Mohiuddin Ahmed" class="hero-photo" />
-    </div>
-
-    <div class="hero-badge">
-      <span class="hero-badge-label">GPA</span>
-      <span class="hero-badge-value">3.17<span class="hero-badge-value-of">/4.0</span></span>
-      <span class="hero-badge-sub">Overall — B.E Tech, AI</span>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FEATURED PROJECTS ============ -->
-<section class="section section-alt" id="featured">
-  <div class="container">
-    <div class="featured-head">
-      <div>
-        <p class="section-eyebrow">Featured</p>
-        <h2 class="section-title">A few things I've built</h2>
+  <!-- Sticky Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/favicon-removebg-preview.png" alt="Logo" />
+        <span>Hussain</span>Ahmed
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="certificates.html" class="nav-link">Certificates</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle light and dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="mobile-nav-toggle" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
-      <a href="/projects.html" class="btn btn-outline">View all projects →</a>
     </div>
+  </header>
 
-    <div class="project-grid">
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge">
+            <i class="fa-solid fa-circle" style="font-size: 0.6rem;"></i> Available for AI &amp; Backend Roles
+          </span>
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Hussain Mohiuddin Ahmed</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            Backend AI Intern @ FlyRank &amp; B.E Tech (Artificial Intelligence) Student @ Sir Syed University of Engineering and Technology
+          </h2>
+          <p class="hero-tagline">
+            "Passionate about building intelligent systems and solving real-world problems using Machine Learning, Deep Learning, and NLP."
+          </p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">
+              <i class="fa-solid fa-diagram-project"></i> View My Work
+            </a>
+            <a href="assets/Hussain_Mohiuddin_Resume.pdf" download="Hussain_Mohiuddin_Resume.pdf" class="btn btn-secondary">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+            </a>
+          </div>
+        </div>
+        
+        <!-- Professional Avatar / Profile Photo -->
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <img src="assets/profile.jpg" alt="Hussain Mohiuddin Ahmed" class="avatar-img" />
+            <div class="floating-pill">
+              <i class="fa-solid fa-bolt"></i> Backend AI &amp; LLMs
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <article class="card project-card">
-        <div class="project-card-top">
-          <span class="project-index">01</span>
-          <h3 class="project-title">Echo</h3>
-        </div>
-        <p class="project-sub">AI Audio Transcription &amp; Emotion Detection</p>
-        <p class="project-desc">
-          Transcribes spoken audio and layers emotion detection on top, turning a raw voice
-          recording into structured, readable insight.
-        </p>
-        <ul class="project-tags">
-          <li>Python</li><li>OpenAI Whisper</li>
-        </ul>
-        <div class="project-actions">
-          <a href="#" class="btn btn-ghost btn-sm">GitHub Repo</a>
-          <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
-        </div>
-      </article>
+    <!-- Featured Projects Teaser -->
+    <section class="section" style="background-color: var(--bg-surface);">
+      <div class="container">
+        <h2 class="section-title">Featured Work</h2>
+        <p class="section-subtitle">A glimpse into visual authentication and deep learning systems I have built.</p>
+        
+        <div class="projects-grid">
+          <!-- Featured Project 1: ScanPass -->
+          <article class="project-card">
+            <div>
+              <div class="project-header">
+                <span class="badge"><i class="fa-solid fa-shield-halved"></i> Highlight</span>
+              </div>
+              <h3 class="project-title">ScanPass – Visual Authentication System</h3>
+              <p class="project-desc">
+                Object-based visual login eliminating password fatigue. Solved SHA-256 sensitivity issues using Perceptual Hashing (aHash) with custom Canvas API processing.
+              </p>
+              <div class="project-tech">
+                <span class="tag">React.js</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Perceptual Hashing</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="https://lnkd.in/dYp9Pywm" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="https://lnkd.in/dXpkR-nY" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+            </div>
+          </article>
 
-      <article class="card project-card">
-        <div class="project-card-top">
-          <span class="project-index">04</span>
-          <h3 class="project-title">Real-time Object Detection</h3>
+          <!-- Featured Project 2: Echo -->
+          <article class="project-card">
+            <div>
+              <div class="project-header">
+                <span class="badge"><i class="fa-solid fa-brain"></i> AI &amp; Audio</span>
+              </div>
+              <h3 class="project-title">Echo – AI Audio Transcription &amp; Emotion Detection</h3>
+              <p class="project-desc">
+                Speech recognition pipeline transforming vocal inputs into transcripts with real-time emotional state classification using OpenAI Whisper.
+              </p>
+              <div class="project-tech">
+                <span class="tag">Python</span>
+                <span class="tag">OpenAI Whisper</span>
+                <span class="tag">NLP</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="projects.html" class="btn btn-secondary btn-sm">
+                <i class="fa-brands fa-github"></i> Details
+              </a>
+              <button class="btn btn-primary btn-sm" disabled style="opacity: 0.75; cursor: default;">
+                Live Demo - Coming Soon!
+              </button>
+            </div>
+          </article>
         </div>
-        <p class="project-sub">YOLOv8 with a custom centroid tracker</p>
-        <p class="project-desc">
-          Detects and tracks objects live across video frames, assigning persistent IDs with
-          a centroid-based tracker layered on top of YOLOv8.
-        </p>
-        <ul class="project-tags">
-          <li>OpenCV</li><li>Ultralytics</li>
-        </ul>
-        <div class="project-actions">
-          <a href="#" class="btn btn-ghost btn-sm">GitHub Repo</a>
-          <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
-        </div>
-      </article>
 
-      <article class="card project-card">
-        <div class="project-card-top">
-          <span class="project-index">05</span>
-          <h3 class="project-title">LSTM Music Generator</h3>
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="projects.html" class="btn btn-secondary">
+            Explore All 7 Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
-        <p class="project-sub">Original sequences from MIDI training data</p>
-        <p class="project-desc">
-          Trains an LSTM network on note sequences and generates new, playable MIDI
-          compositions using temperature-based sampling.
-        </p>
-        <ul class="project-tags">
-          <li>TensorFlow</li><li>Keras</li><li>music21</li>
-        </ul>
-        <div class="project-actions">
-          <a href="#" class="btn btn-ghost btn-sm">GitHub Repo</a>
-          <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
-        </div>
-      </article>
+      </div>
+    </section>
+  </main>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h3 style="font-weight: 700;">Hussain Mohiuddin Ahmed</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Building practical AI solutions for tomorrow's challenges.</p>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:mohiuddinhussain9@gmail.com" class="social-icon" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hussain Mohiuddin Ahmed. All rights reserved.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- ============ ABOUT TEASER ============ -->
-<section class="section">
-  <div class="container about-teaser">
-    <div>
-      <p class="section-eyebrow">About</p>
-      <h2 class="section-title">Building things that reason, not just render.</h2>
-      <p class="section-lede">
-        I'm an AI student and backend-leaning engineer who likes taking a problem apart
-        until it fits inside a model — mostly Python, ML pipelines, and NLP.
-      </p>
-    </div>
-    <a href="/about.html" class="btn btn-outline">More about me →</a>
-  </div>
-</section>
-
-<!-- ============ CTA ============ -->
-<section class="section section-alt">
-  <div class="container" style="text-align:center;">
-    <p class="section-eyebrow" style="justify-content:center;">Let's talk</p>
-    <h2 class="section-title" style="margin-left:auto;margin-right:auto;">Got a project or a role in mind?</h2>
-    <div class="hero-cta" style="justify-content:center;">
-      <a href="/contact.html" class="btn btn-primary">Get in touch</a>
-    </div>
-  </div>
-</section>
+  <script src="script.js" defer></script>
+</body>
+</html>

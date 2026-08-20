@@ -1,54 +1,144 @@
----
-layout: default
-nav_id: about
-title: "About — Hussain Mohiuddin Ahmed"
-description: "About Hussain Mohiuddin Ahmed — AI student, Python developer, and backend AI intern."
----
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Hussain Mohiuddin Ahmed</title>
+  <link rel="icon" type="image/png" href="assets/favicon-modified.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-<div class="container page-header">
-  <p class="page-header-eyebrow">01 — About</p>
-  <h1 class="page-header-title gradient-text">Building things that reason, not just render.</h1>
-</div>
-
-<section class="section" style="padding-top:0;">
-  <div class="container about-grid">
-    <div>
-      <p class="about-bio">
-        I'm an Artificial Intelligence student and backend-leaning AI engineer who likes
-        taking a problem apart until it fits inside a model. Most of my time goes into
-        <strong>Python</strong>, wiring up <strong>ML pipelines</strong>, and turning research-shaped
-        ideas into scripts that actually run on real data.
-      </p>
-      <p class="about-bio">
-        I care less about the buzzwords and more about whether the thing works end-to-end —
-        from a messy input to a useful output. Lately that's meant a lot of NLP, a bit of
-        computer vision, and a growing habit of treating large language models as another
-        tool in the pipeline rather than magic.
-      </p>
-    </div>
-
-    <div class="skills">
-      <div class="skill-group">
-        <h3 class="skill-group-title">Languages &amp; Tools</h3>
-        <ul class="skill-tags">
-          <li>Python</li><li>Pandas</li><li>TensorFlow</li><li>Keras</li>
-          <li>OpenCV</li><li>OpenAI Whisper</li>
-        </ul>
-      </div>
-
-      <div class="skill-group">
-        <h3 class="skill-group-title">Domains</h3>
-        <ul class="skill-tags">
-          <li>NLP</li><li>Deep Learning</li><li>Computer Vision</li><li>Generative AI</li>
-        </ul>
-      </div>
-
-      <div class="skill-group">
-        <h3 class="skill-group-title">Specialty</h3>
-        <ul class="skill-tags">
-          <li>Prompt Engineering</li><li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>Copilot</li>
-        </ul>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/favicon-removebg-preview.png" alt="Logo" />
+        <span>Hussain</span>Ahmed
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="certificates.html" class="nav-link">Certificates</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle light and dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="mobile-nav-toggle" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </div>
-  </div>
-</section>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">About Me</h1>
+        <p class="section-subtitle">Dedicated to engineering scalable intelligent systems, bridging deep learning theory with production execution.</p>
+
+        <!-- Biography Block -->
+        <div style="background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 2.5rem; margin-bottom: 4rem; box-shadow: var(--shadow-sm);">
+          <div style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+            <img src="assets/profile.jpg" alt="Hussain Mohiuddin Ahmed" style="width: 140px; height: 140px; border-radius: var(--radius-md); object-fit: cover; border: 2px solid var(--primary-green);" />
+            <div style="flex: 1; min-width: 280px;">
+              <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem; color: var(--primary-green);">Background &amp; Philosophy</h2>
+              <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                I am an Artificial Intelligence undergraduate at <strong>Sir Syed University of Engineering and Technology (SSUET)</strong> and currently serving as a <strong>Backend AI Intern at FlyRank AI</strong>. My focus centers on architecting resilient backend AI pipelines, training machine learning and deep learning models, and building practical natural language applications.
+              </p>
+              <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                Whether it is fine-tuning speech recognition models with OpenAI Whisper, constructing computer vision tracking mechanisms with YOLOv8, or developing novel authentication protocols like Perceptual Hashing (aHash), I prioritize code efficiency, security, and real-world utility.
+              </p>
+              <a href="assets/Hussain_Mohiuddin_Resume.pdf" download="Hussain_Mohiuddin_Resume.pdf" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-file-pdf"></i> Download Official Resume
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Skills Grid -->
+        <h2 class="section-title" style="font-size: 1.85rem; margin-bottom: 2rem;">Technical Competencies</h2>
+        <div class="skills-container">
+          <!-- Languages & Tools -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+              <h3>Languages &amp; Tools</h3>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">C++</span>
+              <span class="tag">C#</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Keras</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">OpenAI Whisper</span>
+            </div>
+          </div>
+
+          <!-- Domains -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+              <h3>AI &amp; ML Domains</h3>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Natural Language Processing (NLP)</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Generative AI</span>
+              <span class="tag">Perceptual Hashing</span>
+            </div>
+          </div>
+
+          <!-- Specialty -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <h3>Specialty &amp; LLMs</h3>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">ChatGPT</span>
+              <span class="tag">Claude</span>
+              <span class="tag">Gemini</span>
+              <span class="tag">GitHub Copilot</span>
+              <span class="tag">Context Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h3 style="font-weight: 700;">Hussain Mohiuddin Ahmed</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Building practical AI solutions for tomorrow's challenges.</p>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:mohiuddinhussain9@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hussain Mohiuddin Ahmed. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

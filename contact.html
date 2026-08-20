@@ -1,97 +1,146 @@
----
-layout: default
-nav_id: contact
-title: "Contact — Hussain Mohiuddin Ahmed"
-description: "Get in touch with Hussain Mohiuddin Ahmed."
----
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Hussain Mohiuddin Ahmed</title>
+  <link rel="icon" type="image/png" href="assets/favicon-modified.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-<div class="container page-header">
-  <p class="page-header-eyebrow">05 — Contact</p>
-  <h1 class="page-header-title gradient-text">Let's build something.</h1>
-  <p class="page-header-lede">
-    Open to backend AI roles, internships, and interesting collaborations. Send a message
-    or reach out directly.
-  </p>
-</div>
-
-<section class="section" style="padding-top:0;">
-  <div class="container">
-    <div class="contact-grid">
-      <form class="contact-form" id="contactForm" novalidate>
-        <div class="form-row">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your full name" required />
-        </div>
-
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@email.com" required />
-        </div>
-
-        <div class="form-row">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="What are you building?" required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-      </form>
-
-      <div class="contact-side">
-        <a class="contact-link" href="https://www.linkedin.com/in/hussain-mohiuddin-ai/" target="_blank" rel="noopener">
-          <span class="contact-link-icon">in</span>
-          <span>
-            <span class="contact-link-label">LinkedIn</span>
-            <span class="contact-link-value">hussain-mohiuddin-ai</span>
-          </span>
-        </a>
-
-        <a class="contact-link" href="https://github.com/husssain-2811/" target="_blank" rel="noopener">
-          <span class="contact-link-icon">&lt;/&gt;</span>
-          <span>
-            <span class="contact-link-label">GitHub</span>
-            <span class="contact-link-value">husssain-2811</span>
-          </span>
-        </a>
-
-        <a class="contact-link" href="mailto:hello@example.com">
-          <span class="contact-link-icon">@</span>
-          <span>
-            <span class="contact-link-label">Email</span>
-            <span class="contact-link-value">hello@example.com</span>
-          </span>
-        </a>
-
-        <!-- Add / edit / remove the placeholders below as needed -->
-        <a class="contact-link" href="https://twitter.com/your-handle" target="_blank" rel="noopener">
-          <span class="contact-link-icon">𝕏</span>
-          <span>
-            <span class="contact-link-label">Twitter / X</span>
-            <span class="contact-link-value">@your-handle</span>
-          </span>
-        </a>
-
-        <a class="contact-link" href="https://instagram.com/your-handle" target="_blank" rel="noopener">
-          <span class="contact-link-icon">IG</span>
-          <span>
-            <span class="contact-link-label">Instagram</span>
-            <span class="contact-link-value">@your-handle</span>
-          </span>
-        </a>
-
-        <a class="contact-link" href="https://wa.me/00000000000" target="_blank" rel="noopener">
-          <span class="contact-link-icon">WA</span>
-          <span>
-            <span class="contact-link-label">WhatsApp</span>
-            <span class="contact-link-value">+00 000 000 0000</span>
-          </span>
-        </a>
-
-        <p class="contact-note">
-          Placeholders above (Twitter/X, Instagram, WhatsApp, and the email address) — swap
-          in your real handles/links or delete the ones you don't use.
-        </p>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/favicon-removebg-preview.png" alt="Logo" />
+        <span>Hussain</span>Ahmed
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="certificates.html" class="nav-link">Certificates</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle light and dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="mobile-nav-toggle" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </div>
-  </div>
-</section>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Get In Touch</h1>
+        <p class="section-subtitle">Interested in collaborating on AI systems, backend development, or machine learning initiatives?</p>
+
+        <div class="contact-layout">
+          <!-- Direct Details -->
+          <div>
+            <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">Let's Connect</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Feel free to reach out directly through email or connect via professional platforms.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="contact-item">
+                <div class="contact-icon-wrapper"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h3 style="font-size: 0.9rem; color: var(--text-muted);">Email</h3>
+                  <a href="mailto:mohiuddinhussain9@gmail.com" style="font-weight: 600;">mohiuddinhussain9@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon-wrapper"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div>
+                  <h3 style="font-size: 0.9rem; color: var(--text-muted);">LinkedIn</h3>
+                  <a href="https://www.linkedin.com/in/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" style="font-weight: 600;">hussain-mohiuddin-ai</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon-wrapper"><i class="fa-brands fa-github"></i></div>
+                <div>
+                  <h3 style="font-size: 0.9rem; color: var(--text-muted);">GitHub</h3>
+                  <a href="https://github.com/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" style="font-weight: 600;">hussain-mohiuddin-ai</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon-wrapper"><i class="fa-solid fa-file-pdf"></i></div>
+                <div>
+                  <h3 style="font-size: 0.9rem; color: var(--text-muted);">Curriculum Vitae</h3>
+                  <a href="assets/Hussain_Mohiuddin_Resume.pdf" download="Hussain_Mohiuddin_Resume.pdf" style="font-weight: 600; color: var(--primary-green);">Download PDF Resume</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon-wrapper"><i class="fa-brands fa-instagram"></i></div>
+                <div>
+                  <h3 style="font-size: 0.9rem; color: var(--text-muted);">Instagram</h3>
+                  <span style="font-weight: 600; color: var(--text-secondary);">Coming Soon!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="e.g., Alex Johnson" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="e.g., alex@company.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Describe your project, question, or proposal..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h3 style="font-weight: 700;">Hussain Mohiuddin Ahmed</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Building practical AI solutions for tomorrow's challenges.</p>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:mohiuddinhussain9@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hussain Mohiuddin Ahmed. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
