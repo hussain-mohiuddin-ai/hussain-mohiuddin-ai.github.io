@@ -8,18 +8,18 @@
   <meta name="description" content="Portfolio of Hussain Mohiuddin Ahmed - Backend AI Intern and AI Engineering Student." />
   <!-- Tab Icon / Favicon -->
   <link rel="icon" type="image/png" href="assets/favicon-modified.png" />
-  <!-- Google Fonts: Inter -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <!-- Custom Stylesheet -->
+  <!-- Production Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Sticky Navigation Bar -->
+  <!-- Futuristic Glassmorphic Navigation -->
   <header class="navbar">
     <div class="container nav-container">
       <a href="index.html" class="nav-logo">
@@ -46,25 +46,28 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Futuristic AI Hero Section -->
     <section class="hero">
+      <div class="hero-ambient-glow glow-1"></div>
+      <div class="hero-ambient-glow glow-2"></div>
+
       <div class="container hero-grid">
         <div class="hero-content">
-          <span class="badge">
-            <i class="fa-solid fa-circle" style="font-size: 0.6rem;"></i> Available for AI &amp; Backend Roles
-          </span>
+          <div class="badge">
+            <span class="pulse-dot"></span> Active &bull; AI Backend Pipelines &bull; LLMs
+          </div>
           <h1 class="hero-title">
             Hi, I'm <span class="highlight">Hussain Mohiuddin Ahmed</span>
           </h1>
           <h2 class="hero-subtitle">
-            Backend AI Intern @ FlyRank &amp; B.E Tech (Artificial Intelligence) Student @ Sir Syed University of Engineering and Technology
+            Backend AI Intern @ FlyRank AI &bull; B.E Tech (Artificial Intelligence) Student @ Sir Syed University of Engineering and Technology
           </h2>
           <p class="hero-tagline">
             "Passionate about building intelligent systems and solving real-world problems using Machine Learning, Deep Learning, and NLP."
           </p>
           <div class="hero-actions">
             <a href="projects.html" class="btn btn-primary">
-              <i class="fa-solid fa-diagram-project"></i> View My Work
+              <i class="fa-solid fa-microchip"></i> View My Work
             </a>
             <a href="assets/Hussain_Mohiuddin_Resume.pdf" download="Hussain_Mohiuddin_Resume.pdf" class="btn btn-secondary">
               <i class="fa-solid fa-file-arrow-down"></i> Download Resume
@@ -72,12 +75,15 @@
           </div>
         </div>
         
-        <!-- Professional Avatar / Profile Photo -->
+        <!-- Rotating Holographic Avatar Frame -->
         <div class="hero-visual">
-          <div class="avatar-wrapper">
-            <img src="assets/profile.jpg" alt="Hussain Mohiuddin Ahmed" class="avatar-img" />
+          <div class="avatar-container">
+            <div class="avatar-glow-ring"></div>
+            <div class="avatar-wrapper">
+              <img src="assets/profile.jpg" alt="Hussain Mohiuddin Ahmed" class="avatar-img" />
+            </div>
             <div class="floating-pill">
-              <i class="fa-solid fa-bolt"></i> Backend AI &amp; LLMs
+              <i class="fa-solid fa-brain"></i> Neural Networks &amp; Backend AI
             </div>
           </div>
         </div>
@@ -87,15 +93,15 @@
     <!-- Featured Projects Teaser -->
     <section class="section" style="background-color: var(--bg-surface);">
       <div class="container">
-        <h2 class="section-title">Featured Work</h2>
-        <p class="section-subtitle">A glimpse into visual authentication and deep learning systems I have built.</p>
+        <h2 class="section-title">Featured Innovations</h2>
+        <p class="section-subtitle">Deep learning architectures, authentication systems, and conversational AI solutions.</p>
         
         <div class="projects-grid">
           <!-- Featured Project 1: ScanPass -->
           <article class="project-card">
             <div>
               <div class="project-header">
-                <span class="badge"><i class="fa-solid fa-shield-halved"></i> Highlight</span>
+                <span class="badge"><i class="fa-solid fa-shield-halved"></i> Biometric Auth</span>
               </div>
               <h3 class="project-title">ScanPass – Visual Authentication System</h3>
               <p class="project-desc">
@@ -122,11 +128,11 @@
           <article class="project-card">
             <div>
               <div class="project-header">
-                <span class="badge"><i class="fa-solid fa-brain"></i> AI &amp; Audio</span>
+                <span class="badge"><i class="fa-solid fa-wave-square"></i> Audio AI</span>
               </div>
               <h3 class="project-title">Echo – AI Audio Transcription &amp; Emotion Detection</h3>
               <p class="project-desc">
-                Speech recognition pipeline transforming vocal inputs into transcripts with real-time emotional state classification using OpenAI Whisper.
+                Real-time speech recognition pipeline transforming vocal inputs into transcripts with automated emotional sentiment extraction using OpenAI Whisper.
               </p>
               <div class="project-tech">
                 <span class="tag">Python</span>
@@ -139,15 +145,30 @@
                 <i class="fa-brands fa-github"></i> Details
               </a>
               <button class="btn btn-primary btn-sm" disabled style="opacity: 0.75; cursor: default;">
-                Live Demo - Coming Soon!
+                Coming Soon!
               </button>
             </div>
           </article>
         </div>
 
-        <div style="text-align: center; margin-top: 3rem;">
+        <div style="text-align: center; margin-top: 3.5rem;">
           <a href="projects.html" class="btn btn-secondary">
             Explore All 7 Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Contact Redirect Banner -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner">
+          <h2 class="cta-banner-title">Let's Build Intelligent Systems Together</h2>
+          <p class="cta-banner-subtitle">
+            Have a project, research collaboration, or engineering role in mind? Let's connect and turn concepts into scalable AI solutions.
+          </p>
+          <a href="contact.html" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Get In Touch Now
           </a>
         </div>
       </div>
@@ -159,8 +180,8 @@
     <div class="container">
       <div class="footer-content">
         <div>
-          <h3 style="font-weight: 700;">Hussain Mohiuddin Ahmed</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">Building practical AI solutions for tomorrow's challenges.</p>
+          <h3 style="font-weight: 800; font-size: 1.2rem;">Hussain Mohiuddin Ahmed</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.25rem;">Building practical AI solutions for tomorrow's challenges.</p>
         </div>
         <div class="footer-socials">
           <a href="https://www.linkedin.com/in/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">

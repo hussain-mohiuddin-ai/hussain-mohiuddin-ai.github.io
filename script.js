@@ -1,7 +1,7 @@
 /* ==========================================================================
-   PORTFOLIO SCRIPT (script.js)
+   FUTURISTIC AI PORTFOLIO SCRIPT (script.js)
    Author: Hussain Mohiuddin Ahmed
-   Features: Light/Dark Theme Switcher, Mobile Navigation, Dynamic Form Helper
+   Features: Theme Engine, Responsive Menu, Active State, Interactive Form
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* --------------------------------------------------------------------------
-   1. Theme Management (Light / Dark Mode)
+   1. Light / Dark Mode Engine with Instant Storage Sync
    -------------------------------------------------------------------------- */
 function initTheme() {
   const themeToggleButtons = document.querySelectorAll('.theme-toggle-btn');
@@ -88,7 +88,7 @@ function highlightActiveLink() {
 }
 
 /* --------------------------------------------------------------------------
-   4. Contact Form Interaction
+   4. Interactive Contact Form Submission
    -------------------------------------------------------------------------- */
 function initContactForm() {
   const contactForm = document.getElementById('contactForm');
@@ -100,10 +100,10 @@ function initContactForm() {
     const originalText = submitBtn.innerHTML;
 
     submitBtn.disabled = true;
-    submitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Sending...';
+    submitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Transmitting...';
 
     setTimeout(() => {
-      alert('Thank you for reaching out, Hussain will get back to you shortly!');
+      alert('Message transmitted successfully! Hussain will connect with you soon.');
       contactForm.reset();
       submitBtn.disabled = false;
       submitBtn.innerHTML = originalText;
