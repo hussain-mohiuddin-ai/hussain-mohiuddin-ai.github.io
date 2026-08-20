@@ -4,23 +4,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Experience &amp; Education | Hussain Mohiuddin Ahmed</title>
+  <title>Experience — Hussain Mohiuddin Ahmed</title>
   <link rel="icon" type="image/png" href="assets/favicon-modified.png" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="scroll-progress"></div>
+  <a href="#main" class="skip-link">Skip to content</a>
 
-  <header class="navbar">
-    <div class="container nav-container">
+  <header class="nav-wrap">
+    <div class="container nav">
       <a href="index.html" class="nav-logo">
         <img src="assets/favicon-removebg-preview.png" alt="Logo" />
-        <span>Hussain</span>Ahmed
+        <span><span class="nav-logo-bracket">[</span>hma<span class="nav-logo-bracket">]</span></span>
       </a>
-      <nav class="nav-links">
+
+      <nav class="nav-links" id="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="projects.html" class="nav-link">Projects</a>
@@ -28,143 +33,104 @@
         <a href="certificates.html" class="nav-link">Certificates</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
+
       <div class="nav-actions">
-        <button class="theme-toggle-btn" aria-label="Toggle light and dark mode">
-          <i class="fa-solid fa-moon"></i>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+          <div class="theme-toggle-knob"><i class="fa-solid fa-bolt"></i></div>
         </button>
-        <button class="mobile-nav-toggle" aria-label="Open Navigation Menu">
-          <i class="fa-solid fa-bars"></i>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+          <span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="section">
-      <div class="container">
-        <h1 class="section-title">Work Experience &amp; Education</h1>
-        <p class="section-subtitle">Chronological progression across industry internships, tech roles, and academic foundations.</p>
+  <main id="main" class="container">
+    <div class="page-header reveal">
+      <div class="page-header-eyebrow">Trajectory</div>
+      <h1 class="page-header-title">Experience &amp; Education</h1>
+      <p class="page-header-lede">
+        Industry internships, engineering responsibilities, and academic progression.
+      </p>
+    </div>
 
-        <div class="timeline">
-          
-          <!-- Experience Item 1 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h2 class="timeline-role">Backend AI Intern</h2>
-                  <span class="timeline-company">FlyRank AI</span>
-                </div>
-                <span class="timeline-date">Aug 2026 – Present</span>
-              </div>
-              <p class="timeline-body">
-                Developing and optimizing backend AI services, integrating model endpoints, and building automated data ingestion workflows.
-              </p>
-            </div>
-          </div>
-
-          <!-- Experience Item 2 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h2 class="timeline-role">Facebook Marketing Specialist</h2>
-                  <span class="timeline-company">A-Forward</span>
-                </div>
-                <span class="timeline-date">Jul 2026 – Present</span>
-              </div>
-              <p class="timeline-body">
-                Formulating conversion-driven campaign structures, managing ad budgets, and interpreting real-time audience analytics.
-              </p>
-            </div>
-          </div>
-
-          <!-- Experience Item 3 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h2 class="timeline-role">Artificial Intelligence Intern</h2>
-                  <span class="timeline-company">CodeAlpha</span>
-                </div>
-                <span class="timeline-date">Jul 2026 – Aug 2026</span>
-              </div>
-              <p class="timeline-body">
-                Covered NLP, Deep Learning, and Computer Vision by architecting 4 core projects: Language Translation Tool, FAQ Chatbot, AI Music Generator, and Object Detection &amp; Tracking.
-              </p>
-              <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                <a href="assets/Certificate_Hussain_Mohiuddin_Ahmed.pdf" target="_blank" class="btn btn-secondary btn-sm">
-                  <i class="fa-solid fa-certificate"></i> View Certificate
-                </a>
-                <a href="assets/LOR_Hussain_Mohiuddin_Ahmed.pdf" target="_blank" class="btn btn-secondary btn-sm">
-                  <i class="fa-solid fa-file-lines"></i> View LOR
-                </a>
-                <a href="assets/Hussain_Mohiuddin_Offer_Letter_Code_Alpha.pdf" target="_blank" class="btn btn-secondary btn-sm">
-                  <i class="fa-solid fa-envelope-open-text"></i> Offer Letter
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Experience Item 4 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-header">
-                <div>
-                  <h2 class="timeline-role">CMS Developer (Internship)</h2>
-                  <span class="timeline-company">Digital Dune (Pvt) Ltd.</span>
-                </div>
-                <span class="timeline-date">Oct 2023 – Mar 2024 &bull; 6 mos</span>
-              </div>
-              <p class="timeline-body">
-                Delivered dynamic content-driven web layouts, custom theme logic, and client-side performance enhancements.
-              </p>
-            </div>
-          </div>
-
-          <!-- Education Item -->
-          <div class="timeline-item">
-            <div class="timeline-dot" style="background-color: var(--accent-blue);"></div>
-            <div class="timeline-card" style="border-left: 3px solid var(--accent-blue);">
-              <div class="timeline-header">
-                <div>
-                  <h2 class="timeline-role">B.E Tech, Artificial Intelligence</h2>
-                  <span class="timeline-company">Sir Syed University of Engineering &amp; Technology (SSUET)</span>
-                </div>
-                <span class="timeline-date">Oct 2025 – Oct 2029</span>
-              </div>
-              <p class="timeline-body">
-                Rigorous curriculum in AI, machine learning architectures, data structures, and algorithms.<br />
-                <strong>Academic Standing:</strong> <span class="badge" style="margin-top: 0.5rem;">3.17 / 4.0 GPA</span>
-              </p>
-            </div>
-          </div>
-
+    <div class="timeline">
+      <!-- Role 1 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-rail"><div class="timeline-dot"></div></div>
+        <div>
+          <div class="timeline-date">Aug 2026 – Present</div>
+          <h2 class="timeline-title">Backend AI Intern</h2>
+          <div class="timeline-org">FlyRank AI</div>
+          <p class="timeline-desc">
+            Constructing scalable backend pipelines, connecting AI model endpoints, and architecting data workflows for automated processing.
+          </p>
         </div>
       </div>
-    </section>
+
+      <!-- Role 2 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-rail"><div class="timeline-dot"></div></div>
+        <div>
+          <div class="timeline-date">Jul 2026 – Present</div>
+          <h2 class="timeline-title">Facebook Marketing Specialist</h2>
+          <div class="timeline-org">A-Forward</div>
+          <p class="timeline-desc">
+            Managing audience conversion strategies, digital campaigns, and data-backed performance metrics.
+          </p>
+        </div>
+      </div>
+
+      <!-- Role 3 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-rail"><div class="timeline-dot"></div></div>
+        <div>
+          <div class="timeline-date">Jul 2026 – Aug 2026</div>
+          <h2 class="timeline-title">Artificial Intelligence Intern</h2>
+          <div class="timeline-org">CodeAlpha</div>
+          <p class="timeline-desc">
+            Completed 4 production implementations across NLP, deep learning, and vision: Language Translation, FAQ Chatbot, AI Music Generation, and Object Tracking.
+          </p>
+          <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
+            <a href="assets/Certificate_Hussain_Mohiuddin_Ahmed.pdf" target="_blank" class="btn btn-outline btn-sm">Certificate</a>
+            <a href="assets/LOR_Hussain_Mohiuddin_Ahmed.pdf" target="_blank" class="btn btn-outline btn-sm">LOR</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 4 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-rail"><div class="timeline-dot"></div></div>
+        <div>
+          <div class="timeline-date">Oct 2023 – Mar 2024 &bull; 6 mos</div>
+          <h2 class="timeline-title">CMS Developer (Internship)</h2>
+          <div class="timeline-org">Digital Dune (Pvt) Ltd.</div>
+          <p class="timeline-desc">
+            Built responsive web architectures, customized templates, and implemented client-side optimizations.
+          </p>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="timeline-item reveal">
+        <div class="timeline-rail"><div class="timeline-dot timeline-dot-edu"></div></div>
+        <div>
+          <div class="timeline-date">Oct 2025 – Oct 2029</div>
+          <h2 class="timeline-title">B.E Tech, Artificial Intelligence</h2>
+          <div class="timeline-org">Sir Syed University of Engineering &amp; Technology (SSUET)</div>
+          <p class="timeline-desc">
+            Undergraduate focus on algorithms, deep neural network training, data structures, and computer vision.
+          </p>
+          <span class="timeline-highlight">Current Standing: 3.17 / 4.0 GPA</span>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div>
-          <h3 style="font-weight: 700;">Hussain Mohiuddin Ahmed</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">Building practical AI solutions for tomorrow's challenges.</p>
-        </div>
-        <div class="footer-socials">
-          <a href="https://www.linkedin.com/in/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://github.com/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="mailto:mohiuddinhussain9@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Hussain Mohiuddin Ahmed. All rights reserved.</p>
-      </div>
+  <footer class="footer" style="margin-top: 64px;">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Hussain Mohiuddin Ahmed. Engineered for performance.</div>
+      <a href="#main" class="footer-top">Back to top ↑</a>
     </div>
   </footer>
 

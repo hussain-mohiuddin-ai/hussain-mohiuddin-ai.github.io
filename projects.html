@@ -4,23 +4,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Hussain Mohiuddin Ahmed</title>
+  <title>Projects — Hussain Mohiuddin Ahmed</title>
   <link rel="icon" type="image/png" href="assets/favicon-modified.png" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="scroll-progress"></div>
+  <a href="#main" class="skip-link">Skip to content</a>
 
-  <header class="navbar">
-    <div class="container nav-container">
+  <header class="nav-wrap">
+    <div class="container nav">
       <a href="index.html" class="nav-logo">
         <img src="assets/favicon-removebg-preview.png" alt="Logo" />
-        <span>Hussain</span>Ahmed
+        <span><span class="nav-logo-bracket">[</span>hma<span class="nav-logo-bracket">]</span></span>
       </a>
-      <nav class="nav-links">
+
+      <nav class="nav-links" id="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="projects.html" class="nav-link">Projects</a>
@@ -28,214 +33,195 @@
         <a href="certificates.html" class="nav-link">Certificates</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
+
       <div class="nav-actions">
-        <button class="theme-toggle-btn" aria-label="Toggle light and dark mode">
-          <i class="fa-solid fa-moon"></i>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+          <div class="theme-toggle-knob"><i class="fa-solid fa-bolt"></i></div>
         </button>
-        <button class="mobile-nav-toggle" aria-label="Open Navigation Menu">
-          <i class="fa-solid fa-bars"></i>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+          <span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="section">
-      <div class="container">
-        <h1 class="section-title">Engineered Projects</h1>
-        <p class="section-subtitle">Explore machine learning pipelines, deep learning sequence generators, and full-stack software systems.</p>
+  <main id="main" class="container">
+    <div class="page-header reveal">
+      <div class="page-header-eyebrow">Portfolio Work</div>
+      <h1 class="page-header-title">Engineered Projects</h1>
+      <p class="page-header-lede">
+        Machine learning algorithms, recurrent sequence models, and full-stack software applications.
+      </p>
+    </div>
 
-        <div class="projects-grid">
-          
-          <!-- Project 1: Echo -->
-          <article class="project-card">
-            <div>
-              <div class="project-header">
-                <span class="badge"><i class="fa-solid fa-microphone-lines"></i> Audio AI</span>
-              </div>
-              <h3 class="project-title">Project 1: Echo – AI Audio Transcription &amp; Emotion Detection</h3>
-              <p class="project-desc">
-                High-fidelity audio processing pipeline that performs transcription with temporal accuracy and classifies emotional inflection across audio segments.
-              </p>
-              <div class="project-tech">
-                <span class="tag">Python</span>
-                <span class="tag">OpenAI Whisper</span>
-                <span class="tag">Emotion AI</span>
-              </div>
-            </div>
-            <div class="project-actions">
-              <a href="#" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> GitHub Repo</a>
-              <button class="btn btn-primary btn-sm" disabled style="opacity: 0.75; cursor: default;">Live Demo - Coming Soon!</button>
-            </div>
-          </article>
-
-          <!-- Project 2: Language Translation Tool -->
-          <article class="project-card">
-            <div>
-              <div class="project-header">
-                <span class="badge"><i class="fa-solid fa-language"></i> NLP Tooling</span>
-              </div>
-              <h3 class="project-title">Project 2: Multi-Language Translation Tool</h3>
-              <p class="project-desc">
-                End-to-end language translation supporting 15+ global languages. Features auto-source detection and text-to-speech (TTS) audio synthesis.
-              </p>
-              <div class="project-tech">
-                <span class="tag">Python</span>
-                <span class="tag">deep-translator</span>
-                <span class="tag">gTTS</span>
-              </div>
-            </div>
-            <div class="project-actions">
-              <a href="#" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> GitHub Repo</a>
-              <button class="btn btn-primary btn-sm" disabled style="opacity: 0.75; cursor: default;">Live Demo - Coming Soon!</button>
-            </div>
-          </article>
-
-          <!-- Project 3: NLP FAQ Chatbot -->
-          <article class="project-card">
-            <div>
-              <div class="project-header">
-                <span class="badge"><i class="fa-solid fa-comments"></i> Conversational AI</span>
-              </div>
-              <h3 class="project-title">Project 3: NLP FAQ Chatbot</h3>
-              <p class="project-desc">
-                Intelligent query resolution engine leveraging TF-IDF vectorization and cosine similarity to map user intent against custom knowledge bases.
-              </p>
-              <div class="project-tech">
-                <span class="tag">Python</span>
-                <span class="tag">NLTK</span>
-                <span class="tag">scikit-learn</span>
-                <span class="tag">TF-IDF</span>
-              </div>
-            </div>
-            <div class="project-actions">
-              <a href="#" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> GitHub Repo</a>
-              <button class="btn btn-primary btn-sm" disabled style="opacity: 0.75; cursor: default;">Live Demo - Coming Soon!</button>
-            </div>
-          </article>
-
-          <!-- Project 4: Real-time Object Detection -->
-          <article class="project-card">
-            <div>
-              <div class="project-header">
-                <span class="badge"><i class="fa-solid fa-video"></i> Vision AI</span>
-              </div>
-              <h3 class="project-title">Project 4: Real-time Object Detection &amp; Tracking</h3>
-              <p class="project-desc">
-                Computer vision tracking suite combining Ultralytics YOLOv8 for frame detection with a custom Euclidean centroid tracker for trajectory persistence.
-              </p>
-              <div class="project-tech">
-                <span class="tag">OpenCV</span>
-                <span class="tag">Ultralytics</span>
-                <span class="tag">YOLOv8</span>
-                <span class="tag">Python</span>
-              </div>
-            </div>
-            <div class="project-actions">
-              <a href="#" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> GitHub Repo</a>
-              <button class="btn btn-primary btn-sm" disabled style="opacity: 0.75; cursor: default;">Live Demo - Coming Soon!</button>
-            </div>
-          </article>
-
-          <!-- Project 5: LSTM Music Generator -->
-          <article class="project-card">
-            <div>
-              <div class="project-header">
-                <span class="badge"><i class="fa-solid fa-music"></i> Generative AI</span>
-              </div>
-              <h3 class="project-title">Project 5: LSTM Music Sequence Generator</h3>
-              <p class="project-desc">
-                Deep recurrent neural network trained on polyphonic MIDI files to predict, compose, and synthesize original multi-instrumental melodies.
-              </p>
-              <div class="project-tech">
-                <span class="tag">TensorFlow</span>
-                <span class="tag">Keras</span>
-                <span class="tag">music21</span>
-                <span class="tag">LSTM</span>
-              </div>
-            </div>
-            <div class="project-actions">
-              <a href="#" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> GitHub Repo</a>
-              <button class="btn btn-primary btn-sm" disabled style="opacity: 0.75; cursor: default;">Live Demo - Coming Soon!</button>
-            </div>
-          </article>
-
-          <!-- Project 6: ScanPass -->
-          <article class="project-card" style="border-color: var(--primary-green);">
-            <div>
-              <div class="project-header">
-                <span class="badge"><i class="fa-solid fa-camera"></i> Full-Stack Auth</span>
-              </div>
-              <h3 class="project-title">Project 6: ScanPass – Visual Authentication System</h3>
-              <p class="project-desc">
-                Password fatigue and identity theft mitigation through real-world object authentication. Upgraded from fragile SHA-256 to custom Perceptual Hashing (aHash) with Canvas API.
-              </p>
-              <ul class="project-highlights">
-                <li>Built with React.js, Next.js, Node.js &amp; MongoDB Atlas</li>
-                <li>Camera capture via MediaDevices API</li>
-                <li>Secure backend hashing logic &amp; Vercel deployment</li>
-              </ul>
-              <div class="project-tech">
-                <span class="tag">Next.js</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">MongoDB</span>
-                <span class="tag">Canvas API</span>
-              </div>
-            </div>
-            <div class="project-actions">
-              <a href="https://lnkd.in/dYp9Pywm" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> GitHub Repo</a>
-              <a href="https://lnkd.in/dXpkR-nY" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-            </div>
-          </article>
-
-          <!-- Project 7: Store Management System -->
-          <article class="project-card">
-            <div>
-              <div class="project-header">
-                <span class="badge"><i class="fa-solid fa-terminal"></i> Academic / C++</span>
-              </div>
-              <h3 class="project-title">Project 7: Store Management System</h3>
-              <p class="project-desc">
-                Menu-driven C++ terminal system engineered for SSUET. Automates product stock, shipments, customer balance inquiries, and sales with 20% margin calculations.
-              </p>
-              <ul class="project-highlights">
-                <li>C++ Structures &amp; STL Vector database</li>
-                <li>Input validation &amp; binary/linear search</li>
-                <li>Modular function architecture</li>
-              </ul>
-              <div class="project-tech">
-                <span class="tag">C++</span>
-                <span class="tag">STL Vectors</span>
-                <span class="tag">Data Structures</span>
-              </div>
-            </div>
-            <div class="project-actions">
-              <a href="https://github.com/husssain-2811/StoreManagementSystem" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><i class="fa-brands fa-github"></i> GitHub Repo</a>
-              <button class="btn btn-primary btn-sm" disabled style="opacity: 0.75; cursor: default;">Live Demo - Coming Soon!</button>
-            </div>
-          </article>
-
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <article class="card reveal">
+        <div>
+          <div class="project-card-top">
+            <span class="project-index">01</span>
+            <h3 class="project-title">Echo</h3>
+          </div>
+          <div class="project-sub">AI Audio Transcription &amp; Emotion Detection</div>
+          <p class="project-desc">
+            Vocal input pipeline executing accurate audio speech recognition alongside real-time emotional sentiment classification.
+          </p>
+          <ul class="project-tags">
+            <li>Python</li>
+            <li>OpenAI Whisper</li>
+            <li>NLP</li>
+          </ul>
         </div>
-      </div>
-    </section>
+        <div class="project-actions">
+          <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+          <button class="btn btn-ghost btn-sm" disabled>Live Demo - Coming Soon!</button>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card reveal">
+        <div>
+          <div class="project-card-top">
+            <span class="project-index">02</span>
+            <h3 class="project-title">Language Translator</h3>
+          </div>
+          <div class="project-sub">Multi-Language NLP Tool</div>
+          <p class="project-desc">
+            Translation application supporting 15+ global languages with automated language detection and text-to-speech synthesis.
+          </p>
+          <ul class="project-tags">
+            <li>Python</li>
+            <li>deep-translator</li>
+            <li>gTTS</li>
+          </ul>
+        </div>
+        <div class="project-actions">
+          <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+          <button class="btn btn-ghost btn-sm" disabled>Live Demo - Coming Soon!</button>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="card reveal">
+        <div>
+          <div class="project-card-top">
+            <span class="project-index">03</span>
+            <h3 class="project-title">NLP FAQ Chatbot</h3>
+          </div>
+          <div class="project-sub">Vectorized Intent Matching</div>
+          <p class="project-desc">
+            Contextual response chatbot matching user queries with domain knowledge through TF-IDF vectorization and cosine similarity scoring.
+          </p>
+          <ul class="project-tags">
+            <li>Python</li>
+            <li>NLTK</li>
+            <li>scikit-learn</li>
+          </ul>
+        </div>
+        <div class="project-actions">
+          <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+          <button class="btn btn-ghost btn-sm" disabled>Live Demo - Coming Soon!</button>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="card reveal">
+        <div>
+          <div class="project-card-top">
+            <span class="project-index">04</span>
+            <h3 class="project-title">Object Tracker</h3>
+          </div>
+          <div class="project-sub">Real-Time Computer Vision</div>
+          <p class="project-desc">
+            Real-time multi-target tracking system coupling YOLOv8 frame inference with custom Euclidean centroid distance tracking.
+          </p>
+          <ul class="project-tags">
+            <li>OpenCV</li>
+            <li>Ultralytics</li>
+            <li>YOLOv8</li>
+          </ul>
+        </div>
+        <div class="project-actions">
+          <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+          <button class="btn btn-ghost btn-sm" disabled>Live Demo - Coming Soon!</button>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="card reveal">
+        <div>
+          <div class="project-card-top">
+            <span class="project-index">05</span>
+            <h3 class="project-title">LSTM Music Generator</h3>
+          </div>
+          <div class="project-sub">Generative Sequence AI</div>
+          <p class="project-desc">
+            Recurrent deep learning model trained on MIDI sequences to generate original multi-layered musical notes and melodies.
+          </p>
+          <ul class="project-tags">
+            <li>TensorFlow</li>
+            <li>Keras</li>
+            <li>music21</li>
+          </ul>
+        </div>
+        <div class="project-actions">
+          <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+          <button class="btn btn-ghost btn-sm" disabled>Live Demo - Coming Soon!</button>
+        </div>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="card reveal">
+        <div>
+          <div class="project-card-top">
+            <span class="project-index">06</span>
+            <h3 class="project-title">ScanPass</h3>
+          </div>
+          <div class="project-sub">Visual Authentication System</div>
+          <p class="project-desc">
+            Replaces text passwords with personalized real-world objects using Perceptual Hashing (aHash) and custom Canvas API calculations.
+          </p>
+          <ul class="project-tags">
+            <li>React.js</li>
+            <li>Next.js</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <div class="project-actions">
+          <a href="https://lnkd.in/dYp9Pywm" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Repo</a>
+          <a href="https://lnkd.in/dXpkR-nY" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </article>
+
+      <!-- Project 7 -->
+      <article class="card reveal">
+        <div>
+          <div class="project-card-top">
+            <span class="project-index">07</span>
+            <h3 class="project-title">Store Management</h3>
+          </div>
+          <div class="project-sub">Console Business Application</div>
+          <p class="project-desc">
+            First-semester academic C++ terminal system managing inventory, balance validation, and automated 20% retail profit calculations.
+          </p>
+          <ul class="project-tags">
+            <li>C++</li>
+            <li>Structures</li>
+            <li>STL Vectors</li>
+          </ul>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/husssain-2811/StoreManagementSystem" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Repo</a>
+        </div>
+      </article>
+    </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div>
-          <h3 style="font-weight: 700;">Hussain Mohiuddin Ahmed</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">Building practical AI solutions for tomorrow's challenges.</p>
-        </div>
-        <div class="footer-socials">
-          <a href="https://www.linkedin.com/in/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://github.com/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="mailto:mohiuddinhussain9@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Hussain Mohiuddin Ahmed. All rights reserved.</p>
-      </div>
+  <footer class="footer" style="margin-top: 80px;">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Hussain Mohiuddin Ahmed. Engineered for performance.</div>
+      <a href="#main" class="footer-top">Back to top ↑</a>
     </div>
   </footer>
 

@@ -4,23 +4,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Certificates &amp; Achievements | Hussain Mohiuddin Ahmed</title>
+  <title>Certificates — Hussain Mohiuddin Ahmed</title>
   <link rel="icon" type="image/png" href="assets/favicon-modified.png" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="scroll-progress"></div>
+  <a href="#main" class="skip-link">Skip to content</a>
 
-  <header class="navbar">
-    <div class="container nav-container">
+  <header class="nav-wrap">
+    <div class="container nav">
       <a href="index.html" class="nav-logo">
         <img src="assets/favicon-removebg-preview.png" alt="Logo" />
-        <span>Hussain</span>Ahmed
+        <span><span class="nav-logo-bracket">[</span>hma<span class="nav-logo-bracket">]</span></span>
       </a>
-      <nav class="nav-links">
+
+      <nav class="nav-links" id="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="projects.html" class="nav-link">Projects</a>
@@ -28,172 +33,100 @@
         <a href="certificates.html" class="nav-link">Certificates</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
+
       <div class="nav-actions">
-        <button class="theme-toggle-btn" aria-label="Toggle light and dark mode">
-          <i class="fa-solid fa-moon"></i>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+          <div class="theme-toggle-knob"><i class="fa-solid fa-bolt"></i></div>
         </button>
-        <button class="mobile-nav-toggle" aria-label="Open Navigation Menu">
-          <i class="fa-solid fa-bars"></i>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+          <span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="section">
-      <div class="container">
-        <h1 class="section-title">Certifications &amp; Achievements</h1>
-        <p class="section-subtitle">Verified credentials, competitive achievements, and organizational recognitions.</p>
+  <main id="main" class="container">
+    <div class="page-header reveal">
+      <div class="page-header-eyebrow">Credentials</div>
+      <h1 class="page-header-title">Certifications &amp; Achievements</h1>
+      <p class="page-header-lede">
+        Verified competition wins, technical recognitions, and formal recommendations.
+      </p>
+    </div>
 
-        <div class="cert-grid">
-          
-          <!-- Certificate 1: Prompt Engineering -->
-          <div class="cert-card">
-            <div class="cert-media">
-              <img src="assets/Prompt_Engineering_Competition.jpeg" alt="Prompt Engineering Competition Certificate" />
-            </div>
-            <div class="cert-content">
-              <div class="cert-info">
-                <h3>Prompt Engineering Competition</h3>
-                <p>AI Week 2026 &bull; Competitive Prompt Architecture</p>
-              </div>
-              <div class="cert-actions">
-                <a href="assets/Prompt_Engineering_Competition.jpeg" target="_blank" class="btn btn-secondary btn-sm">
-                  <i class="fa-solid fa-expand"></i> View Full Image
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 2: AI Poster Competition -->
-          <div class="cert-card">
-            <div class="cert-media">
-              <img src="assets/Poster_Competition.jpeg" alt="AI Poster Competition Certificate" />
-            </div>
-            <div class="cert-content">
-              <div class="cert-info">
-                <h3>Certificate of Achievement – AI Poster Competition</h3>
-                <p>AI Week 2026 &bull; Visual Model Exposition</p>
-              </div>
-              <div class="cert-actions">
-                <a href="assets/Poster_Competition.jpeg" target="_blank" class="btn btn-secondary btn-sm">
-                  <i class="fa-solid fa-expand"></i> View Full Image
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 3: Team Decoration -->
-          <div class="cert-card">
-            <div class="cert-media">
-              <img src="assets/Team_Decoration.jpeg" alt="SMEC'26 Team Decoration Certificate" />
-            </div>
-            <div class="cert-content">
-              <div class="cert-info">
-                <h3>Certificate of Achievement – Team Decoration</h3>
-                <p>SMEC'26 &bull; Collaborative Leadership</p>
-              </div>
-              <div class="cert-actions">
-                <a href="assets/Team_Decoration.jpeg" target="_blank" class="btn btn-secondary btn-sm">
-                  <i class="fa-solid fa-expand"></i> View Full Image
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 4: CodeAlpha Virtual Internship Certificate (PDF) -->
-          <div class="cert-card">
-            <div class="cert-media">
-              <div class="cert-doc-preview">
-                <i class="fa-solid fa-file-pdf"></i>
-                <span>Official PDF Document</span>
-              </div>
-            </div>
-            <div class="cert-content">
-              <div class="cert-info">
-                <h3>CodeAlpha Virtual Internship Certificate</h3>
-                <p>CodeAlpha &bull; AI Engineering Domain Certification</p>
-              </div>
-              <div class="cert-actions">
-                <a href="assets/Certificate_Hussain_Mohiuddin_Ahmed.pdf" target="_blank" class="btn btn-secondary btn-sm">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Open PDF
-                </a>
-                <a href="assets/Certificate_Hussain_Mohiuddin_Ahmed.pdf" download="CodeAlpha_Certificate_Hussain.pdf" class="btn btn-primary btn-sm">
-                  <i class="fa-solid fa-download"></i> Download
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 5: CodeAlpha Letter of Recommendation (PDF) -->
-          <div class="cert-card">
-            <div class="cert-media">
-              <div class="cert-doc-preview">
-                <i class="fa-solid fa-stamp"></i>
-                <span>Official Endorsement</span>
-              </div>
-            </div>
-            <div class="cert-content">
-              <div class="cert-info">
-                <h3>Letter of Recommendation (LOR)</h3>
-                <p>CodeAlpha &bull; Recognized for AI Technical Excellence</p>
-              </div>
-              <div class="cert-actions">
-                <a href="assets/LOR_Hussain_Mohiuddin_Ahmed.pdf" target="_blank" class="btn btn-secondary btn-sm">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Open LOR
-                </a>
-                <a href="assets/LOR_Hussain_Mohiuddin_Ahmed.pdf" download="CodeAlpha_LOR_Hussain.pdf" class="btn btn-primary btn-sm">
-                  <i class="fa-solid fa-download"></i> Download
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 6: CodeAlpha Offer Letter (PDF) -->
-          <div class="cert-card">
-            <div class="cert-media">
-              <div class="cert-doc-preview">
-                <i class="fa-solid fa-envelope-open-text"></i>
-                <span>Internship Letter</span>
-              </div>
-            </div>
-            <div class="cert-content">
-              <div class="cert-info">
-                <h3>CodeAlpha Internship Offer Letter</h3>
-                <p>CodeAlpha &bull; Formal AI Internship Selection</p>
-              </div>
-              <div class="cert-actions">
-                <a href="assets/Hussain_Mohiuddin_Offer_Letter_Code_Alpha.pdf" target="_blank" class="btn btn-secondary btn-sm">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Letter
-                </a>
-                <a href="assets/Hussain_Mohiuddin_Offer_Letter_Code_Alpha.pdf" download="CodeAlpha_Offer_Letter_Hussain.pdf" class="btn btn-primary btn-sm">
-                  <i class="fa-solid fa-download"></i> Download
-                </a>
-              </div>
-            </div>
-          </div>
-
+    <div class="cert-grid">
+      <!-- Cert 1 -->
+      <a href="assets/Prompt_Engineering_Competition.jpeg" target="_blank" class="card cert-card reveal">
+        <div class="cert-media">
+          <img src="assets/Prompt_Engineering_Competition.jpeg" alt="Prompt Engineering Award" />
         </div>
-      </div>
-    </section>
+        <div>
+          <h2 class="cert-title">Prompt Engineering Competition</h2>
+          <div class="cert-issuer">AI Week 2026</div>
+        </div>
+      </a>
+
+      <!-- Cert 2 -->
+      <a href="assets/Poster_Competition.jpeg" target="_blank" class="card cert-card reveal">
+        <div class="cert-media">
+          <img src="assets/Poster_Competition.jpeg" alt="AI Poster Competition" />
+        </div>
+        <div>
+          <h2 class="cert-title">AI Poster Competition &amp; Achievement</h2>
+          <div class="cert-issuer">AI Week 2026</div>
+        </div>
+      </a>
+
+      <!-- Cert 3 -->
+      <a href="assets/Team_Decoration.jpeg" target="_blank" class="card cert-card reveal">
+        <div class="cert-media">
+          <img src="assets/Team_Decoration.jpeg" alt="Team Decoration Award" />
+        </div>
+        <div>
+          <h2 class="cert-title">Certificate of Achievement – Team Decoration</h2>
+          <div class="cert-issuer">SMEC'26</div>
+        </div>
+      </a>
+
+      <!-- Cert 4 -->
+      <a href="assets/Certificate_Hussain_Mohiuddin_Ahmed.pdf" target="_blank" class="card cert-card reveal">
+        <div class="cert-media">
+          <i class="fa-solid fa-file-pdf cert-icon-doc"></i>
+        </div>
+        <div>
+          <h2 class="cert-title">Virtual Internship Certificate</h2>
+          <div class="cert-issuer">CodeAlpha &bull; Artificial Intelligence Track</div>
+        </div>
+      </a>
+
+      <!-- Cert 5 -->
+      <a href="assets/LOR_Hussain_Mohiuddin_Ahmed.pdf" target="_blank" class="card cert-card reveal">
+        <div class="cert-media">
+          <i class="fa-solid fa-stamp cert-icon-doc"></i>
+        </div>
+        <div>
+          <h2 class="cert-title">Letter of Recommendation (LOR)</h2>
+          <div class="cert-issuer">CodeAlpha &bull; AI Engineering Endorsement</div>
+        </div>
+      </a>
+
+      <!-- Cert 6 -->
+      <a href="assets/Hussain_Mohiuddin_Offer_Letter_Code_Alpha.pdf" target="_blank" class="card cert-card reveal">
+        <div class="cert-media">
+          <i class="fa-solid fa-envelope-open-text cert-icon-doc"></i>
+        </div>
+        <div>
+          <h2 class="cert-title">Internship Offer Letter</h2>
+          <div class="cert-issuer">CodeAlpha &bull; Formal AI Selection</div>
+        </div>
+      </a>
+    </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div>
-          <h3 style="font-weight: 700;">Hussain Mohiuddin Ahmed</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">Building practical AI solutions for tomorrow's challenges.</p>
-        </div>
-        <div class="footer-socials">
-          <a href="https://www.linkedin.com/in/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://github.com/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="mailto:mohiuddinhussain9@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Hussain Mohiuddin Ahmed. All rights reserved.</p>
-      </div>
+  <footer class="footer" style="margin-top: 80px;">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Hussain Mohiuddin Ahmed. Engineered for performance.</div>
+      <a href="#main" class="footer-top">Back to top ↑</a>
     </div>
   </footer>
 

@@ -1,32 +1,35 @@
-<!-- index.html (Home) -->
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hussain Mohiuddin Ahmed | AI Engineer Portfolio</title>
+  <title>Hussain Mohiuddin Ahmed — AI Engineer</title>
   <meta name="description" content="Portfolio of Hussain Mohiuddin Ahmed - Backend AI Intern and AI Engineering Student." />
-  <!-- Tab Icon / Favicon -->
   <link rel="icon" type="image/png" href="assets/favicon-modified.png" />
-  <!-- Google Fonts -->
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
-  <!-- FontAwesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <!-- Production Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="scroll-progress"></div>
+  <a href="#main" class="skip-link">Skip to content</a>
 
-  <!-- Futuristic Glassmorphic Navigation -->
-  <header class="navbar">
-    <div class="container nav-container">
+  <!-- Header -->
+  <header class="nav-wrap">
+    <div class="container nav">
       <a href="index.html" class="nav-logo">
         <img src="assets/favicon-removebg-preview.png" alt="Logo" />
-        <span>Hussain</span>Ahmed
+        <span><span class="nav-logo-bracket">[</span>hma<span class="nav-logo-bracket">]</span></span>
       </a>
-      <nav class="nav-links">
+
+      <nav class="nav-links" id="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="projects.html" class="nav-link">Projects</a>
@@ -34,142 +37,169 @@
         <a href="certificates.html" class="nav-link">Certificates</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
+
       <div class="nav-actions">
-        <button class="theme-toggle-btn" aria-label="Toggle light and dark mode">
-          <i class="fa-solid fa-moon"></i>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+          <div class="theme-toggle-knob"><i class="fa-solid fa-bolt"></i></div>
         </button>
-        <button class="mobile-nav-toggle" aria-label="Open Navigation Menu">
-          <i class="fa-solid fa-bars"></i>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+          <span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- Futuristic AI Hero Section -->
-    <section class="hero">
-      <div class="hero-ambient-glow glow-1"></div>
-      <div class="hero-ambient-glow glow-2"></div>
-
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="badge">
-            <span class="pulse-dot"></span> Active &bull; AI Backend Pipelines &bull; LLMs
-          </div>
-          <h1 class="hero-title">
-            Hi, I'm <span class="highlight">Hussain Mohiuddin Ahmed</span>
-          </h1>
-          <h2 class="hero-subtitle">
-            Backend AI Intern @ FlyRank AI &bull; B.E Tech (Artificial Intelligence) Student @ Sir Syed University of Engineering and Technology
-          </h2>
-          <p class="hero-tagline">
-            "Passionate about building intelligent systems and solving real-world problems using Machine Learning, Deep Learning, and NLP."
-          </p>
-          <div class="hero-actions">
-            <a href="projects.html" class="btn btn-primary">
-              <i class="fa-solid fa-microchip"></i> View My Work
-            </a>
-            <a href="assets/Hussain_Mohiuddin_Resume.pdf" download="Hussain_Mohiuddin_Resume.pdf" class="btn btn-secondary">
-              <i class="fa-solid fa-file-arrow-down"></i> Download Resume
-            </a>
-          </div>
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="container hero">
+      <div class="hero-glow"></div>
+      
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="dot-pulse"></span>
+          <span>Available for AI Engineering Roles</span>
         </div>
-        
-        <!-- Rotating Holographic Avatar Frame -->
-        <div class="hero-visual">
-          <div class="avatar-container">
-            <div class="avatar-glow-ring"></div>
-            <div class="avatar-wrapper">
-              <img src="assets/profile.jpg" alt="Hussain Mohiuddin Ahmed" class="avatar-img" />
-            </div>
-            <div class="floating-pill">
-              <i class="fa-solid fa-brain"></i> Neural Networks &amp; Backend AI
-            </div>
-          </div>
+
+        <h1 class="hero-name">
+          Hi, I'm <span class="gradient-text">Hussain Mohiuddin</span> Ahmed
+        </h1>
+
+        <p class="hero-role">
+          Backend AI Intern @ FlyRank <span class="hero-role-sep">/</span> B.E Tech AI @ SSUET
+        </p>
+
+        <p class="hero-tagline">
+          Passionate about building intelligent systems and solving real-world challenges through 
+          <span id="typewriter-text" style="color: var(--color-primary); font-weight: 600;"></span><span class="cursor"></span>
+        </p>
+
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-primary">
+            <i class="fa-solid fa-arrow-right"></i> View Work
+          </a>
+          <a href="assets/Hussain_Mohiuddin_Resume.pdf" download="Hussain_Mohiuddin_Resume.pdf" class="btn btn-outline">
+            <i class="fa-solid fa-download"></i> Resume
+          </a>
+        </div>
+
+        <div class="hero-stack">
+          <span class="chip">Python</span>
+          <span class="chip">C++</span>
+          <span class="chip">Deep Learning</span>
+          <span class="chip">NLP</span>
+          <span class="chip">OpenCV</span>
+        </div>
+      </div>
+
+      <!-- Hero Visual HUD Frame -->
+      <div class="hero-visual">
+        <div class="hero-photo-frame">
+          <img src="assets/profile.jpg" alt="Hussain Mohiuddin Ahmed" class="hero-photo" />
+        </div>
+        <div class="hero-badge">
+          <span class="hero-badge-label">SSUET Standing</span>
+          <div class="hero-badge-value">3.17 <span class="hero-badge-value-of">/ 4.0 GPA</span></div>
+          <span class="hero-badge-sub">Artificial Intelligence</span>
         </div>
       </div>
     </section>
 
-    <!-- Featured Projects Teaser -->
-    <section class="section" style="background-color: var(--bg-surface);">
+    <!-- Featured Section -->
+    <section class="section section-alt">
       <div class="container">
-        <h2 class="section-title">Featured Innovations</h2>
-        <p class="section-subtitle">Deep learning architectures, authentication systems, and conversational AI solutions.</p>
-        
-        <div class="projects-grid">
-          <!-- Featured Project 1: ScanPass -->
-          <article class="project-card">
-            <div>
-              <div class="project-header">
-                <span class="badge"><i class="fa-solid fa-shield-halved"></i> Biometric Auth</span>
-              </div>
-              <h3 class="project-title">ScanPass – Visual Authentication System</h3>
-              <p class="project-desc">
-                Object-based visual login eliminating password fatigue. Solved SHA-256 sensitivity issues using Perceptual Hashing (aHash) with custom Canvas API processing.
-              </p>
-              <div class="project-tech">
-                <span class="tag">React.js</span>
-                <span class="tag">Next.js</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">Perceptual Hashing</span>
-              </div>
-            </div>
-            <div class="project-actions">
-              <a href="https://lnkd.in/dYp9Pywm" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-              <a href="https://lnkd.in/dXpkR-nY" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-              </a>
-            </div>
-          </article>
-
-          <!-- Featured Project 2: Echo -->
-          <article class="project-card">
-            <div>
-              <div class="project-header">
-                <span class="badge"><i class="fa-solid fa-wave-square"></i> Audio AI</span>
-              </div>
-              <h3 class="project-title">Echo – AI Audio Transcription &amp; Emotion Detection</h3>
-              <p class="project-desc">
-                Real-time speech recognition pipeline transforming vocal inputs into transcripts with automated emotional sentiment extraction using OpenAI Whisper.
-              </p>
-              <div class="project-tech">
-                <span class="tag">Python</span>
-                <span class="tag">OpenAI Whisper</span>
-                <span class="tag">NLP</span>
-              </div>
-            </div>
-            <div class="project-actions">
-              <a href="projects.html" class="btn btn-secondary btn-sm">
-                <i class="fa-brands fa-github"></i> Details
-              </a>
-              <button class="btn btn-primary btn-sm" disabled style="opacity: 0.75; cursor: default;">
-                Coming Soon!
-              </button>
-            </div>
-          </article>
+        <div class="featured-head reveal">
+          <div>
+            <div class="section-eyebrow">Featured Deployments</div>
+            <h2 class="section-title">Engineered AI Systems</h2>
+          </div>
+          <a href="projects.html" class="btn btn-outline btn-sm">All 7 Projects →</a>
         </div>
 
-        <div style="text-align: center; margin-top: 3.5rem;">
-          <a href="projects.html" class="btn btn-secondary">
-            Explore All 7 Projects <i class="fa-solid fa-arrow-right"></i>
-          </a>
+        <div class="project-grid">
+          <!-- Featured 1 -->
+          <article class="card reveal">
+            <div>
+              <div class="project-card-top">
+                <span class="project-index">01</span>
+                <h3 class="project-title">ScanPass Auth</h3>
+              </div>
+              <div class="project-sub">Visual Object-Based Authentication</div>
+              <p class="project-desc">
+                Replaced traditional sensitive hashing with Perceptual Hashing (aHash) via Canvas API, enabling reliable similarity-based visual login.
+              </p>
+              <ul class="project-tags">
+                <li>Next.js</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>aHash</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a href="https://lnkd.in/dYp9Pywm" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="https://lnkd.in/dXpkR-nY" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+            </div>
+          </article>
+
+          <!-- Featured 2 -->
+          <article class="card reveal">
+            <div>
+              <div class="project-card-top">
+                <span class="project-index">02</span>
+                <h3 class="project-title">Echo</h3>
+              </div>
+              <div class="project-sub">Audio Transcription &amp; Emotion AI</div>
+              <p class="project-desc">
+                Real-time audio processing pipeline utilizing OpenAI Whisper for accurate speech-to-text with integrated emotional sentiment detection.
+              </p>
+              <ul class="project-tags">
+                <li>Python</li>
+                <li>Whisper</li>
+                <li>Emotion AI</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a href="projects.html" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+              <button class="btn btn-ghost btn-sm" disabled>Coming Soon</button>
+            </div>
+          </article>
+
+          <!-- Featured 3 -->
+          <article class="card reveal">
+            <div>
+              <div class="project-card-top">
+                <span class="project-index">03</span>
+                <h3 class="project-title">Store Management</h3>
+              </div>
+              <div class="project-sub">Console Business Logic System</div>
+              <p class="project-desc">
+                Structured C++ console application managing inventory, shipments, automated 20% margin logic, and binary searches with STL vectors.
+              </p>
+              <ul class="project-tags">
+                <li>C++</li>
+                <li>STL Vectors</li>
+                <li>Algorithms</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/husssain-2811/StoreManagementSystem" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Bottom Contact Redirect Banner -->
-    <section class="cta-banner-section">
-      <div class="container">
-        <div class="cta-banner">
-          <h2 class="cta-banner-title">Let's Build Intelligent Systems Together</h2>
-          <p class="cta-banner-subtitle">
-            Have a project, research collaboration, or engineering role in mind? Let's connect and turn concepts into scalable AI solutions.
+    <!-- Bottom Contact Teaser -->
+    <section class="section">
+      <div class="container reveal">
+        <div class="card" style="text-align: center; padding: 56px 24px;">
+          <div class="section-eyebrow" style="justify-content: center;">Next Steps</div>
+          <h2 class="section-title" style="margin: 0 auto 16px;">Let's Collaborate On Intelligent Systems</h2>
+          <p class="section-lede" style="margin: 0 auto 32px;">
+            Open to discussing backend architectures, deep learning research, or prospective software engineering positions.
           </p>
-          <a href="contact.html" class="btn btn-primary">
-            <i class="fa-solid fa-paper-plane"></i> Get In Touch Now
-          </a>
+          <div>
+            <a href="contact.html" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+          </div>
         </div>
       </div>
     </section>
@@ -177,27 +207,9 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div>
-          <h3 style="font-weight: 800; font-size: 1.2rem;">Hussain Mohiuddin Ahmed</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.25rem;">Building practical AI solutions for tomorrow's challenges.</p>
-        </div>
-        <div class="footer-socials">
-          <a href="https://www.linkedin.com/in/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="mailto:mohiuddinhussain9@gmail.com" class="social-icon" aria-label="Email">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Hussain Mohiuddin Ahmed. All rights reserved.</p>
-      </div>
+    <div class="container footer-inner">
+      <div>&copy; 2026 Hussain Mohiuddin Ahmed. Engineered for performance.</div>
+      <a href="#main" class="footer-top">Back to top ↑</a>
     </div>
   </footer>
 

@@ -1,79 +1,104 @@
 /* ==========================================================================
-   FUTURISTIC AI PORTFOLIO SCRIPT (script.js)
-   Author: Hussain Mohiuddin Ahmed
-   Features: Theme Engine, Responsive Menu, Active State, Interactive Form
+   Hussain Mohiuddin Ahmed — Portfolio Interactive Controller (script.js)
+   Features: Scroll Progress, Reveal on Scroll, Theme Toggle, Mobile Menu,
+             Dynamic Typewriter Effect, and Live Form Handling
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initTheme();
+  initScrollProgress();
+  initThemeEngine();
   initMobileNav();
-  highlightActiveLink();
+  initScrollReveal();
+  initActiveNavLinks();
+  initTypewriter();
   initContactForm();
 });
 
 /* --------------------------------------------------------------------------
-   1. Light / Dark Mode Engine with Instant Storage Sync
+   1. Scroll Progress Bar
    -------------------------------------------------------------------------- */
-function initTheme() {
-  const themeToggleButtons = document.querySelectorAll('.theme-toggle-btn');
+function initScrollProgress() {
+  const progressBar = document.getElementById('scroll-progress');
+  if (!progressBar) return;
+
+  window.addEventListener('scroll', () => {
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (totalHeight > 0) {
+      const progress = (window.scrollY / totalHeight) * 100;
+      progressBar.style.width = `${progress}%`;
+    }
+  }, { passive: true });
+}
+
+/* --------------------------------------------------------------------------
+   2. Theme Toggle & Persistence
+   -------------------------------------------------------------------------- */
+function initThemeEngine() {
+  const toggleBtn = document.getElementById('theme-toggle');
   const storedTheme = localStorage.getItem('theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   
-  const initialTheme = storedTheme || (prefersDark ? 'dark' : 'light');
-  document.documentElement.setAttribute('data-theme', initialTheme);
-  updateToggleIcons(initialTheme);
+  const currentTheme = storedTheme || (prefersDark ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', currentTheme);
 
-  themeToggleButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      const activeTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
       
-      document.documentElement.setAttribute('data-theme', targetTheme);
-      localStorage.setItem('theme', targetTheme);
-      updateToggleIcons(targetTheme);
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Mobile Navigation Toggle
+   -------------------------------------------------------------------------- */
+function initMobileNav() {
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  if (!navToggle || !navLinks) return;
+
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+
+  // Close when clicking an anchor
+  navLinks.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
     });
   });
 }
 
-function updateToggleIcons(theme) {
-  const icons = document.querySelectorAll('.theme-toggle-btn i');
-  icons.forEach(icon => {
-    if (theme === 'dark') {
-      icon.className = 'fa-solid fa-sun';
-    } else {
-      icon.className = 'fa-solid fa-moon';
-    }
+/* --------------------------------------------------------------------------
+   4. Intersection Observer: Reveal on Scroll
+   -------------------------------------------------------------------------- */
+function initScrollReveal() {
+  const revealElements = document.querySelectorAll('.reveal');
+  if (!revealElements.length) return;
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: '0px 0px -40px 0px'
   });
+
+  revealElements.forEach(el => observer.observe(el));
 }
 
 /* --------------------------------------------------------------------------
-   2. Responsive Mobile Navigation Menu
+   5. Active Page Link Highlighting
    -------------------------------------------------------------------------- */
-function initMobileNav() {
-  const toggleBtn = document.querySelector('.mobile-nav-toggle');
-  const navLinks = document.querySelector('.nav-links');
-
-  if (!toggleBtn || !navLinks) return;
-
-  toggleBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    const isOpen = navLinks.classList.contains('active');
-    toggleBtn.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
-    toggleBtn.setAttribute('aria-expanded', isOpen);
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!toggleBtn.contains(e.target) && !navLinks.contains(e.target) && navLinks.classList.contains('active')) {
-      navLinks.classList.remove('active');
-      toggleBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
-    }
-  });
-}
-
-/* --------------------------------------------------------------------------
-   3. Highlight Active Navigation Item
-   -------------------------------------------------------------------------- */
-function highlightActiveLink() {
+function initActiveNavLinks() {
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
   const navLinks = document.querySelectorAll('.nav-link');
 
@@ -88,25 +113,76 @@ function highlightActiveLink() {
 }
 
 /* --------------------------------------------------------------------------
-   4. Interactive Contact Form Submission
+   6. Typewriter Effect for Hero
+   -------------------------------------------------------------------------- */
+function initTypewriter() {
+  const element = document.getElementById('typewriter-text');
+  if (!element) return;
+
+  const words = [
+    "Machine Learning & NLP Pipelines.",
+    "Deep Neural Architectures.",
+    "Visual Authentication Systems.",
+    "Generative AI & LLM Workflows."
+  ];
+
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const typeSpeed = 70;
+  const deleteSpeed = 35;
+  const pauseDuration = 1800;
+
+  function type() {
+    const currentWord = words[wordIndex];
+    
+    if (isDeleting) {
+      element.textContent = currentWord.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      element.textContent = currentWord.substring(0, charIndex + 1);
+      charIndex++;
+    }
+
+    if (!isDeleting && charIndex === currentWord.length) {
+      isDeleting = true;
+      setTimeout(type, pauseDuration);
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+      setTimeout(type, 300);
+    } else {
+      setTimeout(type, isDeleting ? deleteSpeed : typeSpeed);
+    }
+  }
+
+  type();
+}
+
+/* --------------------------------------------------------------------------
+   7. Contact Form Simulation
    -------------------------------------------------------------------------- */
 function initContactForm() {
-  const contactForm = document.getElementById('contactForm');
-  if (!contactForm) return;
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+  if (!form) return;
 
-  contactForm.addEventListener('submit', (e) => {
+  form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
+    const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn.innerHTML;
 
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Transmitting...';
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
 
     setTimeout(() => {
-      alert('Message transmitted successfully! Hussain will connect with you soon.');
-      contactForm.reset();
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = originalText;
-    }, 1000);
+      form.reset();
+      btn.disabled = false;
+      btn.innerHTML = originalText;
+      if (status) {
+        status.textContent = "Message sent successfully! Hussain will get back to you shortly.";
+        setTimeout(() => { status.textContent = ""; }, 5000);
+      }
+    }, 1200);
   });
 }
