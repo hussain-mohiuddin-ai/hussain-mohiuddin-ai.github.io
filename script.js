@@ -162,27 +162,61 @@ function initTypewriter() {
 /* --------------------------------------------------------------------------
    7. Contact Form Simulation
    -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+   7. Contact Form Handler (Web3Forms Integration)
+   -------------------------------------------------------------------------- */
 function initContactForm() {
   const form = document.getElementById('contact-form');
   const status = document.getElementById('form-status');
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
     const originalText = btn.innerHTML;
 
     btn.disabled = true;
     btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+    if (status) status.textContent = '';
 
-    setTimeout(() => {
-      form.reset();
+    const formData = new FormData(form);
+    const json = JSON.stringify(Object.fromEntries(formData));
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: json
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        form.reset();
+        if (status) {
+          status.style.color = '#22c55e';
+          status.textContent = 'Message sent successfully! Hussain will get back to you shortly.';
+        }
+      } else {
+        if (status) {
+          status.style.color = '#ef4444';
+          status.textContent = result.message || 'Submission failed. Please try again.';
+        }
+      }
+    } catch (error) {
+      if (status) {
+        status.style.color = '#ef4444';
+        status.textContent = 'Network error. Please check your connection and try again.';
+      }
+    } finally {
       btn.disabled = false;
       btn.innerHTML = originalText;
       if (status) {
-        status.textContent = "Message sent successfully! Hussain will get back to you shortly.";
-        setTimeout(() => { status.textContent = ""; }, 5000);
+        setTimeout(() => { status.textContent = ''; }, 6000);
       }
-    }, 1200);
+    }
   });
 }
