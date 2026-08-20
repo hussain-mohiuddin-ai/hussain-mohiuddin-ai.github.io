@@ -1,118 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>About — Hussain Mohiuddin Ahmed</title>
-<meta name="description" content="About Hussain Mohiuddin Ahmed — AI student, Python developer, and backend AI intern." />
-<link rel="icon" type="image/png" href="assets/favicon.png" />
+---
+layout: default
+nav_id: about
+title: "About — Hussain Mohiuddin Ahmed"
+description: "About Hussain Mohiuddin Ahmed — AI student, Python developer, and backend AI intern."
+---
 
-<script>
-  (function () {
-    try {
-      var saved = localStorage.getItem("theme");
-      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-      if (saved === "dark" || (!saved && prefersDark)) {
-        document.documentElement.setAttribute("data-theme", "dark");
-      }
-    } catch (e) {}
-  })();
-</script>
+<div class="container page-header">
+  <p class="page-header-eyebrow">01 — About</p>
+  <h1 class="page-header-title gradient-text">Building things that reason, not just render.</h1>
+</div>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-<a class="skip-link" href="#main">Skip to content</a>
-
-<header class="nav-wrap">
-  <nav class="nav container">
-    <a href="index.html" class="nav-logo">
-      <span class="nav-logo-bracket">&lt;</span>Hussain<span class="nav-logo-bracket">/&gt;</span>
-    </a>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li><a href="about.html" class="nav-link active">About</a></li>
-      <li><a href="projects.html" class="nav-link">Projects</a></li>
-      <li><a href="experience.html" class="nav-link">Experience</a></li>
-      <li><a href="certificates.html" class="nav-link">Certificates</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
-    </ul>
-
-    <div class="nav-actions">
-      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Toggle dark mode">
-        <span class="theme-toggle-knob">🌙</span>
-      </button>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+<section class="section" style="padding-top:0;">
+  <div class="container about-grid">
+    <div>
+      <p class="about-bio">
+        I'm an Artificial Intelligence student and backend-leaning AI engineer who likes
+        taking a problem apart until it fits inside a model. Most of my time goes into
+        <strong>Python</strong>, wiring up <strong>ML pipelines</strong>, and turning research-shaped
+        ideas into scripts that actually run on real data.
+      </p>
+      <p class="about-bio">
+        I care less about the buzzwords and more about whether the thing works end-to-end —
+        from a messy input to a useful output. Lately that's meant a lot of NLP, a bit of
+        computer vision, and a growing habit of treating large language models as another
+        tool in the pipeline rather than magic.
+      </p>
     </div>
-  </nav>
-</header>
 
-<main id="main">
-
-  <div class="container page-header">
-    <p class="page-header-eyebrow">01 — About</p>
-    <h1 class="page-header-title gradient-text">Building things that reason, not just render.</h1>
-  </div>
-
-  <section class="section" style="padding-top:0;">
-    <div class="container about-grid">
-      <div>
-        <p class="about-bio">
-          I'm an Artificial Intelligence student and backend-leaning AI engineer who likes
-          taking a problem apart until it fits inside a model. Most of my time goes into
-          <strong>Python</strong>, wiring up <strong>ML pipelines</strong>, and turning research-shaped
-          ideas into scripts that actually run on real data.
-        </p>
-        <p class="about-bio">
-          I care less about the buzzwords and more about whether the thing works end-to-end —
-          from a messy input to a useful output. Lately that's meant a lot of NLP, a bit of
-          computer vision, and a growing habit of treating large language models as another
-          tool in the pipeline rather than magic.
-        </p>
+    <div class="skills">
+      <div class="skill-group">
+        <h3 class="skill-group-title">Languages &amp; Tools</h3>
+        <ul class="skill-tags">
+          <li>Python</li><li>Pandas</li><li>TensorFlow</li><li>Keras</li>
+          <li>OpenCV</li><li>OpenAI Whisper</li>
+        </ul>
       </div>
 
-      <div class="skills">
-        <div class="skill-group">
-          <h3 class="skill-group-title">Languages &amp; Tools</h3>
-          <ul class="skill-tags">
-            <li>Python</li><li>C++</li><li>C#</li><li>Pandas</li><li>TensorFlow</li><li>Keras</li>
-            <li>OpenCV</li><li>OpenAI Whisper</li>
-          </ul>
-        </div>
+      <div class="skill-group">
+        <h3 class="skill-group-title">Domains</h3>
+        <ul class="skill-tags">
+          <li>NLP</li><li>Deep Learning</li><li>Computer Vision</li><li>Generative AI</li>
+        </ul>
+      </div>
 
-        <div class="skill-group">
-          <h3 class="skill-group-title">Domains</h3>
-          <ul class="skill-tags">
-            <li>NLP</li><li>Deep Learning</li><li>Computer Vision</li><li>Generative AI</li>
-          </ul>
-        </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group-title">Specialty</h3>
-          <ul class="skill-tags">
-            <li>Prompt Engineering</li><li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>Copilot</li>
-          </ul>
-        </div>
+      <div class="skill-group">
+        <h3 class="skill-group-title">Specialty</h3>
+        <ul class="skill-tags">
+          <li>Prompt Engineering</li><li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>Copilot</li>
+        </ul>
       </div>
     </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <p>&copy; <span id="year"></span> Hussain Mohiuddin Ahmed. All rights reserved.</p>
-    <a href="#main" class="footer-top">Back to top ↑</a>
   </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+</section>

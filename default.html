@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}" />
+<link rel="icon" type="image/png" href="/assets/favicon.png" />
+
+<!-- Applies saved theme before paint, so there's no light/dark flash -->
+<script src="/theme-init.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV (edit links in _data/nav.yml, not here) ============ -->
+<header class="nav-wrap">
+  <nav class="nav container">
+    <a href="/index.html" class="nav-logo">
+      <span class="nav-logo-bracket">&lt;</span>Hussain<span class="nav-logo-bracket">/&gt;</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      {% for item in site.data.nav %}
+      <li>
+        <a href="{{ item.url }}" class="nav-link{% if page.nav_id == item.id %} active{% endif %}">
+          {{ item.label }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" aria-label="Toggle dark mode">
+        <span class="theme-toggle-knob">🌙</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  {{ content }}
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Hussain Mohiuddin Ahmed. All rights reserved.</p>
+    <a href="#main" class="footer-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
