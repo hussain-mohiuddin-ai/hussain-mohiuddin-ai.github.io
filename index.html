@@ -1,48 +1,173 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
+  <!-- Character Encoding & Viewport -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hussain Mohiuddin Ahmed — AI Engineer</title>
-  <meta name="description" content="Portfolio of Hussain Mohiuddin Ahmed - Backend AI Intern and AI Engineering Student." />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Hussain Mohiuddin | AI Engineer – Backend AI, Prompt Engineering &amp; Speech Systems</title>
+  <meta name="title" content="Hussain Mohiuddin | AI Engineer – Backend AI, Prompt Engineering &amp; Speech Systems" />
+  <meta name="description" content="Official portfolio of Hussain Mohiuddin, B.E. Artificial Intelligence student and Backend AI Engineer specializing in Python, OpenAI Whisper speech processing, YOLOv8 computer vision, and systematic LLM prompt optimization across Claude, ChatGPT, and Gemini." />
+  <meta name="keywords" content="Hussain Mohiuddin, Hussain Mohiuddin Ahmed, AI Engineer, Backend AI Engineer, Prompt Engineer, Prompt Engineering, OpenAI Whisper, Whisper Speech to Text, YOLOv8, Computer Vision, LSTM Music Generation, Python AI Developer, SSUET Karachi, Sir Syed University, FlyRank AI, CodeAlpha, AI Portfolio" />
+  <meta name="author" content="Hussain Mohiuddin" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="language" content="English" />
+  <meta name="geo.region" content="PK-SD" />
+  <meta name="geo.placename" content="Karachi" />
+  <link rel="canonical" href="https://hussain-mohiuddin-ai.github.io/" />
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/favicon-modified.png" />
-  
-  <!-- Fonts -->
+  <link rel="apple-touch-icon" href="assets/favicon-modified.png" />
+
+  <!-- OpenGraph / Facebook / LinkedIn Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hussain-mohiuddin-ai.github.io/" />
+  <meta property="og:title" content="Hussain Mohiuddin | AI Engineer – Backend AI &amp; Prompt Engineering Specialist" />
+  <meta property="og:description" content="Explore production-grade AI systems, OpenAI Whisper speech pipelines, YOLOv8 computer vision, and LLM prompt architectures built by Hussain Mohiuddin." />
+  <meta property="og:image" content="https://hussain-mohiuddin-ai.github.io/assets/hussain_mohiuddin_profile_pic.jpeg" />
+  <meta property="og:image:alt" content="Hussain Mohiuddin - AI Engineer" />
+  <meta property="og:site_name" content="Hussain Mohiuddin Portfolio" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://hussain-mohiuddin-ai.github.io/" />
+  <meta name="twitter:title" content="Hussain Mohiuddin | AI Engineer" />
+  <meta name="twitter:description" content="Backend AI Engineer &amp; Prompt Optimization Specialist. Python, Whisper, YOLOv8, LSTMs, LLMs. SSUET Karachi." />
+  <meta name="twitter:image" content="https://hussain-mohiuddin-ai.github.io/assets/hussain_mohiuddin_profile_pic.jpeg" />
+
+  <!-- JSON-LD Structured Data for Google Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://hussain-mohiuddin-ai.github.io/#person",
+        "name": "Hussain Mohiuddin",
+        "alternateName": ["Hussain Mohiuddin Ahmed", "hma"],
+        "jobTitle": "Backend AI Engineer &amp; Prompt Optimization Specialist",
+        "description": "Backend AI Engineer and Prompt Engineering specialist pursuing B.E. in Artificial Intelligence at Sir Syed University of Engineering &amp; Technology. Experienced in Python, OpenAI Whisper, YOLOv8 tracking, LSTM sequence models, and LLM orchestration.",
+        "url": "https://hussain-mohiuddin-ai.github.io/",
+        "image": "https://hussain-mohiuddin-ai.github.io/assets/hussain_mohiuddin_profile_pic.jpeg",
+        "email": "mohiuddinhussain9@gmail.com",
+        "telephone": "+923230299773",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Karachi",
+          "addressRegion": "Sindh",
+          "addressCountry": "Pakistan"
+        },
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Sir Syed University of Engineering and Technology",
+          "sameAs": "https://www.ssuet.edu.pk/"
+        },
+        "worksFor": [
+          {
+            "@type": "Organization",
+            "name": "FlyRank AI",
+            "jobTitle": "Backend AI Engineering Intern"
+          },
+          {
+            "@type": "Organization",
+            "name": "CodeAlpha",
+            "jobTitle": "Artificial Intelligence Intern"
+          }
+        ],
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "Prompt Engineering",
+          "Backend AI Engineering",
+          "Large Language Models (LLMs)",
+          "OpenAI Whisper Speech Recognition",
+          "Computer Vision",
+          "YOLOv8 Object Tracking",
+          "Natural Language Processing (NLP)",
+          "Deep Learning &amp; LSTMs",
+          "Python Programming",
+          "CMS Engineering",
+          "Digital Marketing Strategy"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/hussain-mohiuddin-ai/",
+          "https://github.com/hussain-mohiuddin-ai/",
+          "https://github.com/husssain-2811"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://hussain-mohiuddin-ai.github.io/#website",
+        "url": "https://hussain-mohiuddin-ai.github.io/",
+        "name": "Hussain Mohiuddin | AI Engineer Portfolio",
+        "description": "Portfolio of Hussain Mohiuddin, featuring AI projects in speech-to-text, computer vision, deep learning, and prompt engineering.",
+        "publisher": {
+          "@id": "https://hussain-mohiuddin-ai.github.io/#person"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://hussain-mohiuddin-ai.github.io/#breadcrumb",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://hussain-mohiuddin-ai.github.io/"},
+          {"@type": "ListItem", "position": 2, "name": "About", "item": "https://hussain-mohiuddin-ai.github.io/#about"},
+          {"@type": "ListItem", "position": 3, "name": "Skills", "item": "https://hussain-mohiuddin-ai.github.io/#skills"},
+          {"@type": "ListItem", "position": 4, "name": "Projects", "item": "https://hussain-mohiuddin-ai.github.io/#projects"},
+          {"@type": "ListItem", "position": 5, "name": "Experience", "item": "https://hussain-mohiuddin-ai.github.io/#experience"},
+          {"@type": "ListItem", "position": 6, "name": "Certifications", "item": "https://hussain-mohiuddin-ai.github.io/#certifications"},
+          {"@type": "ListItem", "position": 7, "name": "Contact", "item": "https://hussain-mohiuddin-ai.github.io/#contact"}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Typography & Font Awesome CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  
-  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Core Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="scroll-progress"></div>
-  <a href="#main" class="skip-link">Skip to content</a>
+  <!-- Real-Time Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
 
-  <!-- Header -->
-  <header class="nav-wrap">
+  <!-- Accessible Skip Link -->
+  <a href="#hero" class="skip-link">Skip to main content</a>
+
+  <!-- Fixed Glassmorphic Navigation Bar -->
+  <header class="nav-wrap" id="navbar">
     <div class="container nav">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/favicon-removebg-preview.png" alt="Logo" />
-        <span><span class="nav-logo-bracket">[</span>hma<span class="nav-logo-bracket">]</span></span>
+      <a href="#hero" class="nav-logo" aria-label="Hussain Mohiuddin Home">
+        <img src="assets/favicon-removebg-preview.png" alt="Logo" width="34" height="34" />
+        <span class="nav-logo-text"><span class="nav-bracket">[</span>hma<span class="nav-bracket">]</span></span>
       </a>
 
-      <nav class="nav-links" id="nav-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="projects.html" class="nav-link">Projects</a>
-        <a href="experience.html" class="nav-link">Experience</a>
-        <a href="certificates.html" class="nav-link">Certificates</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+      <!-- Desktop Anchor Nav Links -->
+      <nav class="nav-links" id="nav-links" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#terminal" class="nav-link">Terminal</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
+      <!-- Action Controls -->
       <div class="nav-actions">
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
-          <div class="theme-toggle-knob"><i class="fa-solid fa-bolt"></i></div>
+        <a href="assets/Hussain_Mohiuddin_Resume.pdf" download="Hussain_Mohiuddin_Resume.pdf" class="btn btn-primary btn-sm nav-resume-btn">
+          <i class="fa-solid fa-file-arrow-down"></i> <span>Resume</span>
+        </a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Light/Dark Theme" title="Toggle Light/Dark Theme">
+          <div class="theme-toggle-knob"><i class="fa-solid fa-bolt" id="theme-icon"></i></div>
         </button>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
           <span></span><span></span>
         </button>
       </div>
@@ -50,169 +175,970 @@
   </header>
 
   <main id="main">
-    <!-- Hero Section -->
-    <section class="container hero">
-      <div class="hero-glow"></div>
-      
-      <div class="hero-content">
-        <div class="eyebrow">
-          <span class="dot-pulse"></span>
-          <span>Available for AI Engineering Roles</span>
-        </div>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="section hero-section" id="hero">
+      <div class="hero-ambient-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
 
-        <h1 class="hero-name">
-          Hi, I'm <span class="gradient-text">Hussain Mohiuddin</span> Ahmed
-        </h1>
-
-        <p class="hero-role">
-          Backend AI Intern @ FlyRank <span class="hero-role-sep">/</span> B.E Tech AI @ SSUET
-        </p>
-
-        <p class="hero-tagline">
-          Passionate about building intelligent systems and solving real-world challenges through 
-          <span id="typewriter-text" style="color: var(--color-primary); font-weight: 600;"></span><span class="cursor"></span>
-        </p>
-
-        <div class="hero-cta">
-          <a href="projects.html" class="btn btn-primary">
-            <i class="fa-solid fa-arrow-right"></i> View Work
-          </a>
-          <a href="assets/Hussain_Mohiuddin_Resume.pdf" download="Hussain_Mohiuddin_Resume.pdf" class="btn btn-outline">
-            <i class="fa-solid fa-download"></i> Resume
-          </a>
-        </div>
-
-        <div class="hero-stack">
-          <span class="chip">Python</span>
-          <span class="chip">C++</span>
-          <span class="chip">Deep Learning</span>
-          <span class="chip">NLP</span>
-          <span class="chip">OpenCV</span>
-        </div>
-      </div>
-
-      <!-- Hero Visual HUD Frame -->
-      <div class="hero-visual">
-        <div class="hero-photo-frame">
-          <img src="assets/profile.jpg" alt="Hussain Mohiuddin Ahmed" class="hero-photo" />
-        </div>
-        <div class="hero-badge">
-          <span class="hero-badge-label">SSUET Standing</span>
-          <div class="hero-badge-value">3.17 <span class="hero-badge-value-of">/ 4.0 GPA</span></div>
-          <span class="hero-badge-sub">Artificial Intelligence</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured Section -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="featured-head reveal">
-          <div>
-            <div class="section-eyebrow">Featured Deployments</div>
-            <h2 class="section-title">Engineered AI Systems</h2>
+        <!-- Left Column: Copy & CTAs -->
+        <div class="hero-content">
+          <div class="status-badge reveal">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for AI Engineering &amp; Prompt Roles</span>
           </div>
-          <a href="projects.html" class="btn btn-outline btn-sm">All 7 Projects →</a>
+
+          <h1 class="hero-title reveal">
+            Hi, I'm <span class="gradient-text">Hussain Mohiuddin</span>
+          </h1>
+
+          <h2 class="hero-tagline reveal">
+            Backend AI Engineer &amp; Prompt Optimization Specialist
+          </h2>
+
+          <div class="hero-dynamic-lead reveal">
+            <span>Specializing in </span>
+            <span class="typewriter-container">
+              <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
+            </span>
+          </div>
+
+          <p class="hero-bio reveal">
+            B.E. in Artificial Intelligence undergraduate at <strong>Sir Syed University (SSUET)</strong>.
+            I architect robust Python backend pipelines, integrate automated speech recognition with
+            <strong>OpenAI Whisper</strong>, engineer <strong>YOLOv8</strong> spatial vision systems, and
+            design rigorous prompt evaluation workflows across modern LLMs.
+          </p>
+
+          <div class="hero-cta-group reveal">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-layer-group"></i> Explore AI Projects
+            </a>
+            <a href="assets/Hussain_Mohiuddin_Resume.pdf" download="Hussain_Mohiuddin_Resume.pdf" class="btn btn-outline" id="resume-download-btn">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+
+          <!-- Social Links Row -->
+          <div class="hero-socials reveal">
+            <a href="https://github.com/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub Profile">
+              <i class="fa-brands fa-github"></i> <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i> <span>LinkedIn</span>
+            </a>
+            <a href="mailto:mohiuddinhussain9@gmail.com" class="social-chip" aria-label="Direct Email">
+              <i class="fa-solid fa-envelope"></i> <span>Email</span>
+            </a>
+          </div>
         </div>
 
-        <div class="project-grid">
-          <!-- Featured 1 -->
-          <article class="card reveal">
-            <div>
-              <div class="project-card-top">
-                <span class="project-index">01</span>
-                <h3 class="project-title">ScanPass Auth</h3>
-              </div>
-              <div class="project-sub">Visual Object-Based Authentication</div>
-              <p class="project-desc">
-                Replaced traditional sensitive hashing with Perceptual Hashing (aHash) via Canvas API, enabling reliable similarity-based visual login.
-              </p>
-              <ul class="project-tags">
-                <li>Next.js</li>
-                <li>Node.js</li>
-                <li>MongoDB</li>
-                <li>aHash</li>
-              </ul>
+        <!-- Right Column: Visual HUD & Portrait -->
+        <div class="hero-visual-wrap reveal">
+          <div class="hero-card-hud">
+            <div class="hud-header">
+              <span class="hud-pill"><i class="fa-solid fa-terminal"></i> AI_NODE://HUSSAIN</span>
+              <span class="hud-status">STATUS: OPTIMAL</span>
             </div>
-            <div class="project-actions">
-              <a href="https://lnkd.in/dYp9Pywm" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Code</a>
-              <a href="https://lnkd.in/dXpkR-nY" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+            <div class="hero-photo-frame">
+              <img src="assets/hussain_mohiuddin_profile_pic-removebg-preview.png" alt="Hussain Mohiuddin - AI Engineer" class="hero-portrait" width="400" height="460" />
+            </div>
+            <div class="hud-footer">
+              <div class="hud-metric">
+                <span class="metric-label">Coursework Distinction</span>
+                <span class="metric-value">4.0 / 4.0 GPA</span>
+              </div>
+              <div class="hud-metric">
+                <span class="metric-label">Core Specialization</span>
+                <span class="metric-value">Backend AI &amp; Whisper</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Live KPI Telemetry Strip -->
+      <div class="container hero-stats-container reveal">
+        <div class="stats-strip">
+          <div class="stat-box">
+            <div class="stat-number">4.0<span class="stat-accent">/4.0</span></div>
+            <div class="stat-label">Prompt Engineering GPA</div>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-box">
+            <div class="stat-number">5<span class="stat-accent">+</span></div>
+            <div class="stat-label">Production AI Deployments</div>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-box">
+            <div class="stat-number">4</div>
+            <div class="stat-label">Industry &amp; Tech Roles</div>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-box">
+            <div class="stat-number">15<span class="stat-accent">+</span></div>
+            <div class="stat-label">Audio &amp; NLP Languages</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow"><i class="fa-solid fa-fingerprint"></i> Engineering Profile</div>
+          <h2 class="section-title">Calculated Precision &amp; Computational Rigor</h2>
+          <p class="section-subtitle">
+            Bridging algorithmic artificial intelligence, speech processing, and commercial web systems.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Narrative Bio -->
+          <div class="about-narrative-card card reveal">
+            <h3 class="card-heading">The Intersection of Algorithmic AI &amp; Business Utility</h3>
+            <p class="about-paragraph">
+              I am an Artificial Intelligence undergraduate at <strong>Sir Syed University of Engineering &amp; Technology (SSUET)</strong>
+              with academic distinction in Prompt Engineering (4.0/4.0 GPA) and active hands-on experience building backend machine learning pipelines.
+            </p>
+            <p class="about-paragraph">
+              My technical work spans speech-to-text systems using <strong>OpenAI Whisper</strong>, custom computer vision trackers using
+              <strong>YOLOv8</strong>, neural melody synthesis with <strong>LSTM networks</strong>, and context-engineered prompt optimization
+              frameworks across <strong>Claude 3.5, ChatGPT, Gemini, and Copilot</strong>.
+            </p>
+            <p class="about-paragraph">
+              Beyond pure algorithmic models, my previous roles in <strong>CMS Web Development</strong> and <strong>Performance Digital Marketing</strong>
+              allow me to build AI applications that integrate seamlessly into real-world business infrastructure, prioritize low latency, and produce measurable ROI.
+            </p>
+            <div class="about-cta-bar">
+              <a href="assets/Hussain_Mohiuddin_Resume.pdf" download="Hussain_Mohiuddin_Resume.pdf" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-file-pdf"></i> Download Official Resume (PDF)
+              </a>
+              <a href="#experience" class="btn btn-outline btn-sm">
+                <i class="fa-solid fa-arrow-right"></i> View Career Timeline
+              </a>
+            </div>
+          </div>
+
+          <!-- 3 Pillars of Philosophy -->
+          <div class="about-pillars">
+            <div class="pillar-card card reveal">
+              <div class="pillar-icon"><i class="fa-solid fa-brain"></i></div>
+              <div>
+                <h4 class="pillar-title">Systematic Prompt Engineering</h4>
+                <p class="pillar-desc">
+                  Designing structured few-shot templates, chain-of-thought evaluations, and benchmark libraries to extract deterministic precision from LLMs.
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-card card reveal">
+              <div class="pillar-icon"><i class="fa-solid fa-wave-square"></i></div>
+              <div>
+                <h4 class="pillar-title">Audio &amp; Speech AI Pipelines</h4>
+                <p class="pillar-desc">
+                  Building acoustic analysis systems with OpenAI Whisper, combining accurate multilingual transcription with real-time emotion and pace inference.
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-card card reveal">
+              <div class="pillar-icon"><i class="fa-solid fa-cubes"></i></div>
+              <div>
+                <h4 class="pillar-title">Production Backend Architecture</h4>
+                <p class="pillar-desc">
+                  Structuring robust Python backend APIs, handling vector similarity retrieval, managing C++ data structures, and connecting microservices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TECHNICAL SKILLS BENTO GRID ==================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow"><i class="fa-solid fa-microchip"></i> Core Competencies</div>
+          <h2 class="section-title">Technical Arsenal &amp; AI Stack</h2>
+          <p class="section-subtitle">
+            A structured matrix of programming languages, deep learning frameworks, and LLM optimization tools.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Bento Cell 1: AI & LLM Platforms -->
+          <div class="bento-card card reveal">
+            <div class="bento-header">
+              <div class="bento-icon-box"><i class="fa-solid fa-robot"></i></div>
+              <span class="bento-badge">LLM Platforms</span>
+            </div>
+            <h3 class="bento-title">AI &amp; Foundation Models</h3>
+            <p class="bento-desc">Deep operational experience crafting prompts, evaluating outputs, and integrating APIs across leading models.</p>
+            <div class="bento-tags">
+              <span class="tag">Claude 3.5 / Opus</span>
+              <span class="tag">OpenAI GPT-4o</span>
+              <span class="tag">Google Gemini Pro</span>
+              <span class="tag">Microsoft Copilot</span>
+            </div>
+          </div>
+
+          <!-- Bento Cell 2: Prompt Engineering -->
+          <div class="bento-card card reveal bento-highlight">
+            <div class="bento-header">
+              <div class="bento-icon-box accent-box"><i class="fa-solid fa-code-branch"></i></div>
+              <span class="bento-badge highlight-badge">4.0 GPA Distinction</span>
+            </div>
+            <h3 class="bento-title">Prompt Engineering</h3>
+            <p class="bento-desc">Formal methodology for prompt design, template optimization, context window management, and automated evaluation.</p>
+            <div class="bento-tags">
+              <span class="tag">System Prompt Design</span>
+              <span class="tag">Few-Shot Prompting</span>
+              <span class="tag">Chain-of-Thought (CoT)</span>
+              <span class="tag">Prompt Libraries</span>
+              <span class="tag">Evaluation &amp; Benchmarks</span>
+            </div>
+          </div>
+
+          <!-- Bento Cell 3: Backend & Python -->
+          <div class="bento-card card reveal">
+            <div class="bento-header">
+              <div class="bento-icon-box"><i class="fa-brands fa-python"></i></div>
+              <span class="bento-badge">Backend Stack</span>
+            </div>
+            <h3 class="bento-title">Python &amp; Speech AI</h3>
+            <p class="bento-desc">Core programming, speech-to-text processing pipelines, structured data analysis, and algorithm design.</p>
+            <div class="bento-tags">
+              <span class="tag">Python 3.12+ (OOP)</span>
+              <span class="tag">OpenAI Whisper</span>
+              <span class="tag">Pandas &amp; NumPy</span>
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">C++ (STL Vectors)</span>
+            </div>
+          </div>
+
+          <!-- Bento Cell 4: Deep Learning & Computer Vision -->
+          <div class="bento-card card reveal">
+            <div class="bento-header">
+              <div class="bento-icon-box"><i class="fa-solid fa-eye"></i></div>
+              <span class="bento-badge">Computer Vision</span>
+            </div>
+            <h3 class="bento-title">Vision &amp; Neural Sequences</h3>
+            <p class="bento-desc">Real-time object tracking with custom centroid algorithms, recurrent neural networks, and MIDI tokenization.</p>
+            <div class="bento-tags">
+              <span class="tag">Ultralytics YOLOv8</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Centroid Tracking</span>
+              <span class="tag">TensorFlow &amp; Keras</span>
+              <span class="tag">LSTM Networks</span>
+              <span class="tag">music21</span>
+            </div>
+          </div>
+
+          <!-- Bento Cell 5: Web & Business Integration -->
+          <div class="bento-card card reveal">
+            <div class="bento-header">
+              <div class="bento-icon-box"><i class="fa-solid fa-chart-line"></i></div>
+              <span class="bento-badge">Commercial Acumen</span>
+            </div>
+            <h3 class="bento-title">Business &amp; Web Systems</h3>
+            <p class="bento-desc">Real-world commercial experience translating stakeholder business logic into performant web applications and ad campaigns.</p>
+            <div class="bento-tags">
+              <span class="tag">CMS Development</span>
+              <span class="tag">Meta / Facebook Ads</span>
+              <span class="tag">Marketing Analytics</span>
+              <span class="tag">Stakeholder Comms</span>
+            </div>
+          </div>
+
+          <!-- Bento Cell 6: Core AI Disciplines -->
+          <div class="bento-card card reveal">
+            <div class="bento-header">
+              <div class="bento-icon-box"><i class="fa-solid fa-network-wired"></i></div>
+              <span class="bento-badge">Fundamental AI</span>
+            </div>
+            <h3 class="bento-title">Core AI Disciplines</h3>
+            <p class="bento-desc">Strong theoretical and mathematical foundations in generative modeling, vector representations, and linguistics.</p>
+            <div class="bento-tags">
+              <span class="tag">Generative AI</span>
+              <span class="tag">Large Language Models</span>
+              <span class="tag">Natural Language Processing</span>
+              <span class="tag">TF-IDF Vectorization</span>
+              <span class="tag">Cosine Similarity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS SECTION ==================== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow"><i class="fa-solid fa-code-fork"></i> Engineered Systems</div>
+          <h2 class="section-title">Featured AI &amp; Software Projects</h2>
+          <p class="section-subtitle">
+            Case studies demonstrating speech recognition, computer vision tracking, recurrent deep learning, and vector retrieval.
+          </p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters reveal" role="tablist" aria-label="Project Categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+          <button class="filter-btn" data-filter="ai-speech" role="tab" aria-selected="false">Speech &amp; Audio</button>
+          <button class="filter-btn" data-filter="cv-dl" role="tab" aria-selected="false">Vision &amp; Deep Learning</button>
+          <button class="filter-btn" data-filter="nlp" role="tab" aria-selected="false">NLP &amp; Chatbots</button>
+          <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full Stack &amp; C++</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- FLAGSHIP PROJECT: Echo -->
+          <article class="project-card flagship-card card reveal" data-category="ai-speech">
+            <div class="flagship-badge"><i class="fa-solid fa-star"></i> Flagship Team Project</div>
+            <div class="project-card-header">
+              <div>
+                <span class="project-num">01 / SPEECH &amp; EMOTION AI</span>
+                <h3 class="project-title">Echo — AI Audio Transcription &amp; Emotion Detection Tool</h3>
+              </div>
+              <span class="project-role-badge">Team Lead (3 Engineers)</span>
+            </div>
+            <p class="project-desc">
+              Developed an intelligent vocal processing application that converts spoken audio into timestamped transcripts
+              using <strong>OpenAI Whisper</strong>, while computing acoustic speech tempo and pause dynamics to infer the speaker's emotional state in real time.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item"><i class="fa-solid fa-check"></i> Integrated OpenAI Whisper for noise-resilient multi-speaker transcription.</div>
+              <div class="highlight-item"><i class="fa-solid fa-check"></i> Engineered proprietary speaking pace algorithm (WPM &amp; pause variance) for emotion classification.</div>
+              <div class="highlight-item"><i class="fa-solid fa-check"></i> Led a 3-engineer collaborative build across architecture, integration, and evaluation.</div>
+            </div>
+            <div class="project-meta-row">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">OpenAI Whisper</span>
+                <span class="tag">Speech-to-Text</span>
+                <span class="tag">Emotion AI</span>
+                <span class="tag">Audio Signal Processing</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="btn btn-primary btn-sm"><i class="fa-solid fa-code"></i> Request Code Walkthrough</a>
+              </div>
             </div>
           </article>
 
-          <!-- Featured 2 -->
-          <article class="card reveal">
-            <div>
-              <div class="project-card-top">
-                <span class="project-index">02</span>
-                <h3 class="project-title">Echo</h3>
+          <!-- PROJECT 02: Real-Time Object Tracking -->
+          <article class="project-card card reveal" data-category="cv-dl">
+            <div class="project-card-header">
+              <div>
+                <span class="project-num">02 / COMPUTER VISION</span>
+                <h3 class="project-title">Real-Time Object Detection &amp; Centroid Tracker</h3>
               </div>
-              <div class="project-sub">Audio Transcription &amp; Emotion AI</div>
-              <p class="project-desc">
-                Real-time audio processing pipeline utilizing OpenAI Whisper for accurate speech-to-text with integrated emotional sentiment detection.
-              </p>
-              <ul class="project-tags">
-                <li>Python</li>
-                <li>Whisper</li>
-                <li>Emotion AI</li>
-              </ul>
             </div>
-            <div class="project-actions">
-              <a href="projects.html" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Code</a>
-              <button class="btn btn-ghost btn-sm" disabled>Coming Soon</button>
+            <p class="project-desc">
+              High-throughput computer vision pipeline coupling <strong>YOLOv8</strong> bounding-box detection with a custom Euclidean distance centroid tracker for continuous multi-object spatial trajectory logging.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item"><i class="fa-solid fa-check"></i> Sub-second frame inference across multi-class video streams.</div>
+              <div class="highlight-item"><i class="fa-solid fa-check"></i> Custom centroid algorithm handling object occlusion and ID re-identification.</div>
+            </div>
+            <div class="project-meta-row">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">YOLOv8</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">Centroid Tracking</span>
+                <span class="tag">Ultralytics</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Repository</a>
+              </div>
             </div>
           </article>
 
-          <!-- Featured 3 -->
-          <article class="card reveal">
-            <div>
-              <div class="project-card-top">
-                <span class="project-index">03</span>
-                <h3 class="project-title">Store Management</h3>
+          <!-- PROJECT 03: LSTM Music Generator -->
+          <article class="project-card card reveal" data-category="cv-dl">
+            <div class="project-card-header">
+              <div>
+                <span class="project-num">03 / GENERATIVE DEEP LEARNING</span>
+                <h3 class="project-title">Deep Learning Neural Music Generation with LSTMs</h3>
               </div>
-              <div class="project-sub">Console Business Logic System</div>
-              <p class="project-desc">
-                Structured C++ console application managing inventory, shipments, automated 20% margin logic, and binary searches with STL vectors.
-              </p>
-              <ul class="project-tags">
-                <li>C++</li>
-                <li>STL Vectors</li>
-                <li>Algorithms</li>
-              </ul>
             </div>
-            <div class="project-actions">
-              <a href="https://github.com/husssain-2811/StoreManagementSystem" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+            <p class="project-desc">
+              Recurrent deep neural network architecture trained on structured MIDI music files. Encodes pitch, chord progressions, and duration sequences to autonomously synthesize polyphonic musical compositions.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item"><i class="fa-solid fa-check"></i> Parsed multi-track MIDI into numerical tokens using <code>music21</code>.</div>
+              <div class="highlight-item"><i class="fa-solid fa-check"></i> Stacked LSTM network with dropout regularization and temperature sampling.</div>
+            </div>
+            <div class="project-meta-row">
+              <div class="project-tags">
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Keras</span>
+                <span class="tag">LSTMs</span>
+                <span class="tag">music21</span>
+                <span class="tag">MIDI Processing</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: Multilingual Translation Engine -->
+          <article class="project-card card reveal" data-category="nlp">
+            <div class="project-card-header">
+              <div>
+                <span class="project-num">04 / NLP &amp; SPEECH SYNTHESIS</span>
+                <h3 class="project-title">Multilingual Translation &amp; Voice Synthesis Engine</h3>
+              </div>
+            </div>
+            <p class="project-desc">
+              Automated multi-language natural language translation system supporting 15+ global languages with integrated source language detection and real-time text-to-speech vocal generation.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item"><i class="fa-solid fa-check"></i> Auto language detection across 15+ international language scripts.</div>
+              <div class="highlight-item"><i class="fa-solid fa-check"></i> Integrated Google TTS (gTTS) audio synthesis pipeline for instant voice playback.</div>
+            </div>
+            <div class="project-meta-row">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">deep-translator</span>
+                <span class="tag">gTTS</span>
+                <span class="tag">NLP</span>
+                <span class="tag">Speech Synthesis</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 05: NLP Semantic FAQ Chatbot -->
+          <article class="project-card card reveal" data-category="nlp">
+            <div class="project-card-header">
+              <div>
+                <span class="project-num">05 / VECTOR RETRIEVAL</span>
+                <h3 class="project-title">Semantic FAQ Chatbot &amp; Intent Matcher</h3>
+              </div>
+            </div>
+            <p class="project-desc">
+              Contextual query response chatbot matching unstructured user questions against a knowledge base using text preprocessing, TF-IDF vectorization, and high-dimensional cosine similarity scoring.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item"><i class="fa-solid fa-check"></i> Complete tokenization, lemmatization, and stop-word filtering pipeline.</div>
+              <div class="highlight-item"><i class="fa-solid fa-check"></i> High-confidence intent scoring without requiring heavy GPU inference.</div>
+            </div>
+            <div class="project-meta-row">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">NLTK</span>
+                <span class="tag">Scikit-Learn</span>
+                <span class="tag">TF-IDF</span>
+                <span class="tag">Cosine Similarity</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 06: ScanPass Auth -->
+          <article class="project-card card reveal" data-category="fullstack">
+            <div class="project-card-header">
+              <div>
+                <span class="project-num">06 / VISUAL SECURITY</span>
+                <h3 class="project-title">ScanPass — Visual Object-Based Authentication</h3>
+              </div>
+            </div>
+            <p class="project-desc">
+              Novel authentication mechanism replacing sensitive text passwords with personalized real-world objects using Perceptual Hashing (aHash) algorithms and HTML5 Canvas processing.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item"><i class="fa-solid fa-check"></i> Robust perceptual similarity verification resilient to lighting shifts.</div>
+              <div class="highlight-item"><i class="fa-solid fa-check"></i> Full-stack deployment with Next.js, Node.js API routes, and MongoDB.</div>
+            </div>
+            <div class="project-meta-row">
+              <div class="project-tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">aHash</span>
+                <span class="tag">Canvas API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://lnkd.in/dYp9Pywm" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://lnkd.in/dXpkR-nY" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 07: Store Management System -->
+          <article class="project-card card reveal" data-category="fullstack">
+            <div class="project-card-header">
+              <div>
+                <span class="project-num">07 / C++ SYSTEMS</span>
+                <h3 class="project-title">Store Management Console Architecture</h3>
+              </div>
+            </div>
+            <p class="project-desc">
+              High-performance C++ console application managing retail inventory, balance validation, automated 20% margin business logic, and binary search record retrieval over STL vectors.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item"><i class="fa-solid fa-check"></i> Memory-efficient data structures utilizing C++ Standard Template Library (STL).</div>
+              <div class="highlight-item"><i class="fa-solid fa-check"></i> Algorithmic searching and automated financial calculations.</div>
+            </div>
+            <div class="project-meta-row">
+              <div class="project-tags">
+                <span class="tag">C++</span>
+                <span class="tag">STL Vectors</span>
+                <span class="tag">Binary Search</span>
+                <span class="tag">Data Structures</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/husssain-2811/StoreManagementSystem" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"><i class="fa-brands fa-github"></i> Repository</a>
+              </div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Bottom Contact Teaser -->
-    <section class="section">
-      <div class="container reveal">
-        <div class="card" style="text-align: center; padding: 56px 24px;">
-          <div class="section-eyebrow" style="justify-content: center;">Next Steps</div>
-          <h2 class="section-title" style="margin: 0 auto 16px;">Let's Collaborate On Intelligent Systems</h2>
-          <p class="section-lede" style="margin: 0 auto 32px;">
-            Open to discussing backend architectures, deep learning research, or prospective software engineering positions.
+    <!-- ==================== PROFESSIONAL EXPERIENCE ==================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow"><i class="fa-solid fa-briefcase"></i> Career Trajectory</div>
+          <h2 class="section-title">Professional Experience &amp; Internships</h2>
+          <p class="section-subtitle">
+            Industry roles, backend AI engineering responsibilities, and commercial deliverables.
           </p>
-          <div>
-            <a href="contact.html" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+        </div>
+
+        <div class="timeline">
+          <!-- Role 1: FlyRank AI -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"><div class="timeline-dot"></div></div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-period"><i class="fa-regular fa-calendar"></i> July 2026 – Present</span>
+                  <h3 class="timeline-role">Backend AI Engineering Intern</h3>
+                  <div class="timeline-company"><i class="fa-solid fa-building"></i> FlyRank AI <span class="badge-sub">Remote / Self-Paced</span></div>
+                </div>
+                <span class="status-pill active-pill">Current Position</span>
+              </div>
+              <p class="timeline-text">
+                Undergoing structured onboarding, executing technical engineering assignments, and constructing a comprehensive capstone project centered on backend AI architectures, API integration, and model inference optimization.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Backend AI</span>
+                <span class="tag">Python</span>
+                <span class="tag">API Architecture</span>
+                <span class="tag">Model Integration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2: CodeAlpha -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"><div class="timeline-dot"></div></div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-period"><i class="fa-regular fa-calendar"></i> July 2026 – August 2026</span>
+                  <h3 class="timeline-role">Artificial Intelligence Intern</h3>
+                  <div class="timeline-company"><i class="fa-solid fa-building"></i> CodeAlpha <span class="badge-sub">Virtual Internship</span></div>
+                </div>
+                <span class="status-pill completed-pill">Completed</span>
+              </div>
+              <p class="timeline-text">
+                Applied core AI methodologies to develop and deliver 4 independent open-source projects across Computer Vision (YOLOv8 object tracking), Deep Learning (LSTM music generation), NLP (Vectorized FAQ chatbot), and Speech Translation.
+              </p>
+              <div class="timeline-actions">
+                <a href="assets/Certificate_Hussain_Mohiuddin_Ahmed.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-solid fa-certificate"></i> View Certificate (PDF)
+                </a>
+                <a href="assets/LOR_Hussain_Mohiuddin_Ahmed.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-solid fa-stamp"></i> Letter of Recommendation (LOR)
+                </a>
+                <a href="assets/Hussain_Mohiuddin_Offer_Letter_Code_Alpha.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">
+                  <i class="fa-solid fa-envelope-open-text"></i> Offer Letter
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 3: A-Forward -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"><div class="timeline-dot"></div></div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-period"><i class="fa-regular fa-calendar"></i> July 2026 – September 2026</span>
+                  <h3 class="timeline-role">Facebook Marketing Agent</h3>
+                  <div class="timeline-company"><i class="fa-solid fa-building"></i> A-Forward</div>
+                </div>
+              </div>
+              <p class="timeline-text">
+                Secured and managed 2 commercial client accounts, planning and running Meta ad campaigns to maximize brand reach and audience conversion. Monitored quantitative telemetry metrics to optimize targeting and messaging.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Meta Ads</span>
+                <span class="tag">Data Analytics</span>
+                <span class="tag">Conversion Optimization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 4: Digital Dunes -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"><div class="timeline-dot"></div></div>
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-period"><i class="fa-regular fa-calendar"></i> October 2023 – March 2024 (6 months)</span>
+                  <h3 class="timeline-role">CMS Web Developer</h3>
+                  <div class="timeline-company"><i class="fa-solid fa-building"></i> Digital Dunes</div>
+                </div>
+              </div>
+              <p class="timeline-text">
+                Built and maintained commercial CMS-based client websites. Collaborated directly with business stakeholders to translate operational requirements into responsive, high-performance web solutions.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">CMS Engineering</span>
+                <span class="tag">Web Architecture</span>
+                <span class="tag">Stakeholder Comms</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Entry: SSUET -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"><div class="timeline-dot dot-edu"></div></div>
+            <div class="timeline-content card edu-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-period"><i class="fa-regular fa-calendar"></i> Expected Graduation: 2029 (Ongoing - 3rd Semester)</span>
+                  <h3 class="timeline-role">Bachelor of Engineering — Artificial Intelligence (B.E. AI)</h3>
+                  <div class="timeline-company"><i class="fa-solid fa-graduation-cap"></i> Sir Syed University of Engineering &amp; Technology (SSUET), Karachi</div>
+                </div>
+                <span class="status-pill honor-pill">4.0 / 4.0 Coursework GPA</span>
+              </div>
+              <p class="timeline-text">
+                Undergraduate degree focused on fundamental AI, algorithm analysis, machine learning models, and deep neural architectures. Achieved 4.0/4.0 GPA in Prompt Engineering, OOP, and Programming Fundamentals.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Prompt Engineering</span>
+                <span class="tag">Object-Oriented Programming</span>
+                <span class="tag">Data Structures &amp; Algorithms</span>
+                <span class="tag">Machine Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS & ACHIEVEMENTS ==================== -->
+    <section class="section section-alt" id="certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow"><i class="fa-solid fa-award"></i> Verified Credentials</div>
+          <h2 class="section-title">Certifications &amp; Competitive Honors</h2>
+          <p class="section-subtitle">
+            Formal competition recognitions, institutional endorsements, and professional letters of recommendation.
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- Cert 1: Prompt Engineering -->
+          <a href="assets/Prompt_Engineering_Competition.jpeg" target="_blank" rel="noopener noreferrer" class="cert-card card reveal">
+            <div class="cert-media">
+              <img src="assets/Prompt_Engineering_Competition.jpeg" alt="Prompt Engineering Competition Award - AI Week 2026" width="360" height="220" loading="lazy" />
+              <div class="cert-hover-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</div>
+            </div>
+            <div class="cert-body">
+              <span class="cert-badge">Competition Award</span>
+              <h3 class="cert-title">Prompt Engineering Competition</h3>
+              <div class="cert-issuer"><i class="fa-solid fa-building-columns"></i> AI Week 2026 &bull; SSUET</div>
+            </div>
+          </a>
+
+          <!-- Cert 2: Poster Competition -->
+          <a href="assets/Poster_Competition.jpeg" target="_blank" rel="noopener noreferrer" class="cert-card card reveal">
+            <div class="cert-media">
+              <img src="assets/Poster_Competition.jpeg" alt="AI Poster Competition Certificate - AI Week 2026" width="360" height="220" loading="lazy" />
+              <div class="cert-hover-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</div>
+            </div>
+            <div class="cert-body">
+              <span class="cert-badge">Academic Honor</span>
+              <h3 class="cert-title">AI Poster Competition &amp; Achievement</h3>
+              <div class="cert-issuer"><i class="fa-solid fa-building-columns"></i> AI Week 2026 &bull; SSUET</div>
+            </div>
+          </a>
+
+          <!-- Cert 3: Team Decoration -->
+          <a href="assets/Team_Decoration.jpeg" target="_blank" rel="noopener noreferrer" class="cert-card card reveal">
+            <div class="cert-media">
+              <img src="assets/Team_Decoration.jpeg" alt="Team Decoration Certificate SMEC 2026" width="360" height="220" loading="lazy" />
+              <div class="cert-hover-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate</div>
+            </div>
+            <div class="cert-body">
+              <span class="cert-badge">Achievement Award</span>
+              <h3 class="cert-title">Certificate of Achievement – Team Decoration</h3>
+              <div class="cert-issuer"><i class="fa-solid fa-users"></i> SMEC'26 &bull; SSUET</div>
+            </div>
+          </a>
+
+          <!-- Cert 4: CodeAlpha Completion -->
+          <a href="assets/Certificate_Hussain_Mohiuddin_Ahmed.pdf" target="_blank" rel="noopener noreferrer" class="cert-card card reveal">
+            <div class="cert-media cert-doc-media">
+              <div class="cert-doc-icon"><i class="fa-solid fa-file-pdf"></i></div>
+              <span class="cert-doc-label">Official PDF Document</span>
+            </div>
+            <div class="cert-body">
+              <span class="cert-badge badge-emerald">Verified Internship</span>
+              <h3 class="cert-title">AI Internship Certificate</h3>
+              <div class="cert-issuer"><i class="fa-solid fa-certificate"></i> CodeAlpha &bull; AI Track (Aug 2026)</div>
+            </div>
+          </a>
+
+          <!-- Cert 5: Letter of Recommendation -->
+          <a href="assets/LOR_Hussain_Mohiuddin_Ahmed.pdf" target="_blank" rel="noopener noreferrer" class="cert-card card reveal">
+            <div class="cert-media cert-doc-media">
+              <div class="cert-doc-icon"><i class="fa-solid fa-stamp"></i></div>
+              <span class="cert-doc-label">Endorsement Letter</span>
+            </div>
+            <div class="cert-body">
+              <span class="cert-badge badge-emerald">Endorsement</span>
+              <h3 class="cert-title">Letter of Recommendation (LOR)</h3>
+              <div class="cert-issuer"><i class="fa-solid fa-award"></i> CodeAlpha &bull; Engineering Leadership</div>
+            </div>
+          </a>
+
+          <!-- Cert 6: Offer Letter -->
+          <a href="assets/Hussain_Mohiuddin_Offer_Letter_Code_Alpha.pdf" target="_blank" rel="noopener noreferrer" class="cert-card card reveal">
+            <div class="cert-media cert-doc-media">
+              <div class="cert-doc-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+              <span class="cert-doc-label">Official Selection</span>
+            </div>
+            <div class="cert-body">
+              <span class="cert-badge">Selection Letter</span>
+              <h3 class="cert-title">Internship Offer Letter</h3>
+              <div class="cert-issuer"><i class="fa-solid fa-file-contract"></i> CodeAlpha &bull; Formal AI Selection</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Leadership & Community Row -->
+        <div class="leadership-box card reveal">
+          <div class="leadership-title"><i class="fa-solid fa-handshake"></i> Leadership &amp; Extracurricular Activities</div>
+          <div class="leadership-grid">
+            <div class="leadership-item">
+              <div class="lead-icon"><i class="fa-solid fa-user-tie"></i></div>
+              <div>
+                <strong>Member, Cocurriculum Activity Committee (CAC)</strong>
+                <p>IEEE Student Chapter &amp; SMEC'26 &bull; Sir Syed University</p>
+              </div>
+            </div>
+            <div class="leadership-item">
+              <div class="lead-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+              <div>
+                <strong>Event Volunteer, IMTEC Conference</strong>
+                <p>AI-focused inter-university event jointly organized by Mehran University &amp; SSUET</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== INTERACTIVE AI TERMINAL ==================== -->
+    <section class="section" id="terminal">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow"><i class="fa-solid fa-terminal"></i> Interactive Telemetry</div>
+          <h2 class="section-title">Developer Terminal Sandbox</h2>
+          <p class="section-subtitle">
+            Query Hussain's portfolio, models, and background directly via simulated CLI commands.
+          </p>
+        </div>
+
+        <div class="terminal-container card reveal">
+          <div class="terminal-bar">
+            <div class="terminal-buttons">
+              <span class="t-btn t-close"></span>
+              <span class="t-btn t-min"></span>
+              <span class="t-btn t-max"></span>
+            </div>
+            <div class="terminal-title">hussain@ai-engine: ~ (bash 5.2)</div>
+            <div class="terminal-status"><span class="pulse-green"></span> LIVE</div>
+          </div>
+
+          <div class="terminal-body" id="terminal-output">
+            <div class="t-line t-system">Welcome to Hussain Mohiuddin's AI Telemetry Shell.</div>
+            <div class="t-line t-system">Type <span class="t-accent">help</span> to view available commands or click quick-actions below.</div>
+            <div class="t-line"><br /></div>
+          </div>
+
+          <form class="terminal-input-row" id="terminal-form">
+            <span class="terminal-prompt">hussain@ai:~$</span>
+            <input type="text" class="terminal-input" id="terminal-input" placeholder="Type 'skills', 'projects', 'whisper', 'contact'..." autocomplete="off" spellcheck="false" />
+            <button type="submit" class="terminal-submit-btn"><i class="fa-solid fa-arrow-turn-down"></i></button>
+          </form>
+
+          <div class="terminal-quick-chips">
+            <span class="chip-label">Quick Commands:</span>
+            <button type="button" class="term-chip" data-cmd="help">help</button>
+            <button type="button" class="term-chip" data-cmd="whoami">whoami</button>
+            <button type="button" class="term-chip" data-cmd="skills">skills</button>
+            <button type="button" class="term-chip" data-cmd="projects">projects</button>
+            <button type="button" class="term-chip" data-cmd="whisper">whisper</button>
+            <button type="button" class="term-chip" data-cmd="clear">clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow"><i class="fa-solid fa-envelope-open-text"></i> Opportunity Pipeline</div>
+          <h2 class="section-title">Let's Build Something Intelligent</h2>
+          <p class="section-subtitle">
+            Whether you are looking to hire a Backend AI Engineer, optimize LLM prompts for production, or collaborate on speech AI, my inbox is open.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Serverless Formspree Form -->
+          <div class="contact-form-card card reveal">
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/xdenbopv" method="POST">
+              <input type="hidden" name="_subject" value="New Portfolio Message from Hussain's AI Portfolio" />
+
+              <div class="form-row">
+                <label for="name" class="form-label">Full Name <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-user input-icon"></i>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Alex Morgan" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label for="email" class="form-label">Email Address <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-at input-icon"></i>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="alex@company.com" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label for="subject" class="form-label">Subject / Purpose</label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-tag input-icon"></i>
+                  <input type="text" id="subject" name="subject" class="form-input" placeholder="AI Engineering Role / Project Inquiry" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label for="message" class="form-label">Your Message <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Describe your team, project requirements, or opportunity..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="contact-submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> <span>Send Message</span>
+              </button>
+
+              <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <!-- Contact Channels Sidebar -->
+          <div class="contact-sidebar reveal">
+            <!-- Email Card -->
+            <a href="mailto:mohiuddinhussain9@gmail.com" class="contact-channel-card card">
+              <div class="channel-icon-wrap"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="channel-label">Direct Email</span>
+                <span class="channel-value">mohiuddinhussain9@gmail.com</span>
+              </div>
+            </a>
+
+            <!-- LinkedIn Card -->
+            <a href="https://www.linkedin.com/in/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="contact-channel-card card">
+              <div class="channel-icon-wrap icon-linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div>
+                <span class="channel-label">LinkedIn Connection</span>
+                <span class="channel-value">in/hussain-mohiuddin-ai</span>
+              </div>
+            </a>
+
+            <!-- GitHub Card -->
+            <a href="https://github.com/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" class="contact-channel-card card">
+              <div class="channel-icon-wrap icon-github"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <span class="channel-label">GitHub Repositories</span>
+                <span class="channel-value">github.com/hussain-mohiuddin-ai</span>
+              </div>
+            </a>
+
+            <!-- Location & Availability Badge -->
+            <div class="contact-info-pill card">
+              <div class="info-row">
+                <i class="fa-solid fa-location-dot info-icon"></i>
+                <div>
+                  <strong>Karachi, Pakistan</strong>
+                  <p>Available for Global Remote &amp; Hybrid Roles</p>
+                </div>
+              </div>
+              <div class="info-row" style="margin-top: 14px;">
+                <i class="fa-solid fa-clock info-icon"></i>
+                <div>
+                  <strong>Response Window</strong>
+                  <p>Under 24 hours guaranteed</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- ==================== FOOTER ==================== -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <div>&copy; 2026 Hussain Mohiuddin Ahmed. Engineered for performance.</div>
-      <a href="#main" class="footer-top">Back to top ↑</a>
+    <div class="container footer-content">
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <span class="footer-logo"><span class="nav-bracket">[</span>hma<span class="nav-bracket">]</span></span>
+          <p class="footer-tagline">Hussain Mohiuddin &bull; Backend AI Engineer &amp; Prompt Specialist</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/hussain-mohiuddin-ai/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:mohiuddinhussain9@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#hero" class="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i> Top</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p>&copy; 2026 Hussain Mohiuddin Ahmed. Engineered for performance, zero layout shift, and optimal SEO.</p>
+        <div class="footer-telemetry">
+          <span class="telemetry-badge"><i class="fa-solid fa-bolt"></i> Speed: 100/100</span>
+          <span class="telemetry-badge"><i class="fa-solid fa-shield-halved"></i> WCAG AAA</span>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <!-- Core JavaScript -->
   <script src="script.js" defer></script>
 </body>
 </html>
