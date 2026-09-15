@@ -481,6 +481,25 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Neural Network Animated Canvas - Subtle Computational Mesh */
+#neural-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  opacity: 0.55;
+  z-index: 0;
+}
+
+[data-theme="light"] #neural-canvas {
+  opacity: 0.32;
 }
 
 .hero-ambient-glow {
@@ -652,6 +671,24 @@ button {
   align-items: flex-end;
   justify-content: center;
   overflow: hidden;
+  position: relative;
+}
+
+.hero-photo-frame picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero-photo-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 50%),
+    linear-gradient(180deg, transparent 60%, rgba(11, 15, 23, 0.4) 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero-portrait {
@@ -660,7 +697,16 @@ button {
   object-fit: cover;
   object-position: top center;
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
-  transition: transform var(--transition-smooth);
+  transition: transform var(--transition-smooth), filter var(--transition-normal), opacity var(--transition-normal);
+  position: relative;
+  z-index: 0;
+  background-color: var(--bg-surface);
+}
+
+/* Graceful loading / error state - shows gradient fallback while loading */
+.hero-portrait:not([src]),
+.hero-portrait[src=""] {
+  opacity: 0;
 }
 
 .hero-card-hud:hover .hero-portrait {
@@ -1960,6 +2006,13 @@ button {
 
   .timeline-header {
     flex-direction: column;
+  }
+}
+
+/* Neural Canvas Reduced Motion & Performance */
+@media (prefers-reduced-motion: reduce) {
+  #neural-canvas {
+    display: none !important;
   }
 }
 
