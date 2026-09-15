@@ -620,8 +620,10 @@ Specialized in Python backend AI pipelines, OpenAI Whisper ASR, YOLOv8 computer 
 
     contact: () => `<div class="t-output-box">
 • <strong>Email:</strong> mohiuddinhussain9@gmail.com
+• <strong>WhatsApp:</strong> 03230299773 (https://wa.me/923230299773)
 • <strong>LinkedIn:</strong> linkedin.com/in/hussain-mohiuddin-ai/
 • <strong>GitHub:</strong> github.com/hussain-mohiuddin-ai
+• <strong>Instagram:</strong> @hussain_mohiuddin_ai (https://www.instagram.com/hussain_mohiuddin_ai/)
 • <strong>Location:</strong> Karachi, Pakistan
 </div>`,
 
